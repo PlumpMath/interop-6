@@ -1,0 +1,127 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Harvard Interop Serendipity Engine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!--[if IE 7]>
+          <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
+        <![endif]-->
+        <style type="text/css">
+            body {
+                position: relative;
+            }
+            
+            header {
+                background-image: url('{{ STATIC_URL }}img/bridge_and_path.jpg');
+                background-size: 100% auto;
+                height: 200px;
+                background-repeat: no-repeat;
+                margin-bottom: 20px;
+            }
+            
+            header h1 {
+                background-color:rgba(223,223,223,0.7);
+                margin-right: -20px;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                padding-left: 20px;
+                color: #A51C30;
+            }
+            header h2 {
+                background-color:rgba(223,223,223,0.7);
+                color: rgb(73,63,61);
+                margin-right: -20px;
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                padding-left: 20px;
+                font-style: italic;
+            }
+            
+            .footer {
+                margin-top: 40px;
+                padding: 20px 0;
+                background: #f5f5f5;
+                border-top-style: solid;
+                border-top-width: 1px;
+                border-top-color: rgb(229, 229, 229);
+            }
+            
+            .footer p {
+                margin: 0;
+            }
+
+            .well {
+                background-color: #fafafa;
+            }
+
+            /*
+            34 116 124 slate blue
+            15 28 46 very dark blue
+            73 63 61 dark brown
+            73 80 54 olive
+            cc3d3s triadic red
+            841712 triadic red to very dark blue
+            A51C30 harvard crimson
+            136f5d triadic bluegreen to harvard crimson
+            */
+            
+            ul.nav {
+                margin-right: 2.127659574468085%;
+                width: 21.2765957446809%;
+            }
+            
+            .nav li+.nav-header {
+                margin: 0;
+                border-color: rgb(221, 221, 221);
+                border-style: solid;
+                border-width: 0 1px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            
+            .nav-tabs.nav-stacked .nav-tabs.nav-stacked {
+                margin-bottom: 0;
+                width: 100%;
+            }
+            
+            .nav-tabs.nav-stacked .nav-tabs.nav-stacked a {
+                border-radius: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <h1>Harvard Interop Serendipity Engine</h1>
+                <h2>how do you connect?</h2>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                {% block layout %}
+                {% endblock %}
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <p>designed and built by <a href="http://andromedayelton.com">
+                andromeda yelton</a> of <a href="http://smallbeautifuluseful.com">
+                smallbeautifuluseful, llc</a>. 2013.
+            </div>
+        </footer>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+{% comment %}
+audit js: are we using it? are we better off having a small local version?
+add code and documentation licenses to footer
+make sure smallbeautifuluseful.com points at something!
+what's with the slow response time on the facet lists?
+move custom css to external stylesheet
+put breakpoints on header background so it works right on small screens
+{% endcomment %}

@@ -1,0 +1,15 @@
+<ul class="nav nav-tabs nav-stacked span3">
+    <li><a href="#">About</a></li>
+    <li class="nav-header" data-toggle="collapse" data-target="#facetlist">Facet</li>
+    <ul id="facetlist" class="nav nav-tabs nav-stacked collapse">
+        <li><a href="#">link one</a></li>
+        <li><a href="#">link two</a></li>
+    </ul>
+    <li></li>
+    <li></li>
+    {% if user.is_authenticated %}
+    <li><a href="{% url 'logout' %}">Log out</a></li>
+    {% else %}
+    <li><a href="{% url 'login' %}">Log in</a></li>
+    {% endif %}
+</ul>

@@ -1,0 +1,11 @@
+{% extends "base_one_column.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h2>{{ headline }}</h2>
+    <form method="post" action="{% url '{{ post_url }}' %}">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <input type="submit" class="btn" value="{{ input_value }}" />
+    </form>
+{% endblock %}

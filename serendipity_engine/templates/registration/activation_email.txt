@@ -1,0 +1,7 @@
+Woot! Your Harvard Interop Serendipity Engine account has been approved.
+
+To claim your account and log in, click the clicky-link:
+
+http://{{ site.domain }}/accounts/activate/{{ activation_key }}
+
+We're glad you can come play.

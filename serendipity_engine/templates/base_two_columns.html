@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block layout %}
+    <div class="nav-container">
+        {% block sidebar %}
+            {% include "sidebar.html" %}
+        {% endblock %}
+    </div>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+{% endblock %}

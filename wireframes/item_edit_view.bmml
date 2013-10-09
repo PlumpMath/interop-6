@@ -1,0 +1,29 @@
+<mockup version="1.0" skin="sketch" measuredW="788" measuredH="508" mockupW="692" mockupH="478">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="96" y="30" w="692" h="478" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="97" y="33" w="691" h="88" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="377" y="62" w="-1" h="-1" measuredW="73" measuredH="23" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Top%20thingy%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="108" y="140" w="149" h="258" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="123" y="166" w="-1" h="-1" measuredW="93" measuredH="23" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sidebar%20%2825%25%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="96" y="462" w="687" h="41" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="123" y="473" w="-1" h="-1" measuredW="507" measuredH="23" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>footer%20with%20boilerplate%20as%20needed%2C%20and%20a%20little%20bottom%20center%20%28miscellaneous%29%20link</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Canvas" x="276" y="144" w="497" h="254" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="291" y="166" w="236" h="114" measuredW="748" measuredH="23" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>This%20is%20a%20crispy%20form%20for%20entering%20or%20editing%20project/unit/etc.%20data.%20%20Don%27t%20do%20anything%20more%20than%20crispy%20as%20a%20first%20pass.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
