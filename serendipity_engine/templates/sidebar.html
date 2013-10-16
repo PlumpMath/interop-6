@@ -1,12 +1,23 @@
 <ul class="nav nav-tabs nav-stacked span3">
     <li><a href="#">About</a></li>
-    <li class="nav-header" data-toggle="collapse" data-target="#facetlist">Facet</li>
-    <ul id="facetlist" class="nav nav-tabs nav-stacked collapse">
-        <li><a href="#">link one</a></li>
-        <li><a href="#">link two</a></li>
+    <li class="nav-header" data-toggle="collapse" data-target="#typelist">Show only...</li>
+    <ul id="typelist" class="nav nav-tabs nav-stacked">
+        {% for type in types %}
+            <li><a href="#">{{ type.name }}</a></li>
+        {% endfor %}
     </ul>
-    <li></li>
-    <li></li>
+    <li class="nav-header" data-toggle="collapse" data-target="#elementlist">Show only...</li>
+    <ul id="elementlist" class="nav nav-tabs nav-stacked collapse">
+        {% for element in elements %}
+            <li><a href="#">{{ unit.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <li class="nav-header" data-toggle="collapse" data-target="#unitlist">Show only...</li>
+    <ul id="unitlist" class="nav nav-tabs nav-stacked collapse">
+        {% for unit in units %}
+            <li><a href="#">{{ unit.name }}</a></li>
+        {% endfor %}
+    </ul>
     {% if user.is_authenticated %}
     <li><a href="{% url 'logout' %}">Log out</a></li>
     {% else %}

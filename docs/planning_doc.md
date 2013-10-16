@@ -25,9 +25,6 @@
 * /admin (moved appropriately)
 * /random
 
-I should have an image-upload option. And snag a bunch of bokeh for people who don't 
-upload images.
-
 Basic page types are listview and edit/create view (different views logic,
 same template skeletons)
 
@@ -56,6 +53,12 @@ If users are allowed to enter interop projects they use, we may end up with
 blank pages -- will need a "nothing here. add something?" kind of option.
 
 ## Facets
+
+Type
+Component (alpha)
+Organization (ask DW about sub/superunits)
+
+Keyword search??
 
 ### db schema for Facet:
 foreignkey(FacetExample)
