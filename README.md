@@ -6,3 +6,5 @@ libraries and allowing participants to discover possible interconnections.
 
 It's in a pre-alpha state right now, so nothing is guaranteed to work,
 or indeed to be the same tomorrow.
+
+You're probably looking for something in the `docs/` directory.
