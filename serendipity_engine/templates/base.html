@@ -10,20 +10,30 @@
           <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
         <![endif]-->
         <style type="text/css">
+            <!-- see http://www.gse.harvard.edu/guide/palette/ -->
             body {
                 position: relative;
             }
             
+            a:link, a:active, a:visited {
+                color: #4E84C4;
+            }
+
+            a:hover {
+                color: #293352;
+            }
+            
             header {
-                background-image: url('{{ STATIC_URL }}img/bridge_and_path.jpg');
-                background-size: 100% auto;
                 height: 200px;
-                background-repeat: no-repeat;
                 margin-bottom: 20px;
+                background-color: #BAC5C6;
+            }
+            
+            h1, h2 {
+                font-family: serif;
             }
             
             header h1 {
-                background-color:rgba(223,223,223,0.7);
                 margin-right: -20px;
                 padding-top: 0.5em;
                 padding-bottom: 0.5em;
@@ -31,13 +41,32 @@
                 color: #A51C30;
             }
             header h2 {
-                background-color:rgba(223,223,223,0.7);
-                color: rgb(73,63,61);
+                color: #D16103;
                 margin-right: -20px;
                 padding-top: 0.25em;
                 padding-bottom: 0.25em;
                 padding-left: 20px;
                 font-style: italic;
+            }
+            
+            h4.bar {
+                font-size: 14px;
+                text-align: center;
+                border-style: solid;
+                border-width: 1px 0;
+                border-color: rgb(221,221,221);
+                margin: 9px -9px;
+                padding: 7px;
+            }
+            
+            h4.bar.last {
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+             
+            .miscellaneous {
+                margin-bottom: 20px;
             }
             
             .footer {
@@ -57,31 +86,52 @@
                 background-color: #fafafa;
             }
 
-            /*
-            34 116 124 slate blue
-            15 28 46 very dark blue
-            73 63 61 dark brown
-            73 80 54 olive
-            cc3d3s triadic red
-            841712 triadic red to very dark blue
-            A51C30 harvard crimson
-            136f5d triadic bluegreen to harvard crimson
-            */
+            .random {
+                text-align: center;
+            }
+            
+            .random a.btn {
+                color: rgb(165, 28, 48);
+            }
             
             ul.nav {
                 margin-right: 2.127659574468085%;
                 width: 21.2765957446809%;
             }
             
-            .nav li+.nav-header {
+            .nav li.nav-header {
                 margin: 0;
                 border-color: rgb(221, 221, 221);
                 border-style: solid;
                 border-width: 0 1px;
                 padding-top: 8px;
                 padding-bottom: 8px;
+                cursor: pointer;
             }
             
+            .nav li.nav-header i {
+                float: left;
+                margin-top: 5px;
+                margin-right: 5px;
+            }
+            
+            .nav li.nav-header .icon-chevron-down {
+                display: none;
+                float: left;
+            }
+            
+            .nav li.nav-header .icon-chevron-up {
+                display: inherit;
+            }
+
+            .nav li.nav-header.collapsed .icon-chevron-down {
+                display: inherit;
+            }
+            
+            .nav li.nav-header.collapsed .icon-chevron-up {
+                display: none;
+            }
+
             .nav-tabs.nav-stacked .nav-tabs.nav-stacked {
                 margin-bottom: 0;
                 width: 100%;
@@ -110,10 +160,16 @@
                 <p>designed and built by <a href="http://andromedayelton.com">
                 andromeda yelton</a> of <a href="http://smallbeautifuluseful.com">
                 smallbeautifuluseful, llc</a>. 2013.
+                </p>
+                
+                <p class="pull-right">
+                want something <a href="{% url 'miscellaneous' %}">miscellaneous</a>?
+                </p>
             </div>
         </footer>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        {% include 'autocomplete_light/static.html' %}
     </body>
 </html>
 

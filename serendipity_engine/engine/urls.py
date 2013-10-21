@@ -1,4 +1,10 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic.base import TemplateView
+
+import autocomplete_light
+
+# must go before admin.autodiscover()
+autocomplete_light.autodiscover()
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -7,16 +13,25 @@ admin.autodiscover()
 from .views import HomeView, MiscellaneousView, RandomView
 
 urlpatterns = patterns('',
-    # Examples:
     url(r'^$', 
         HomeView.as_view(),
         name='home'),
     url(r'^miscellaneous/$', 
         MiscellaneousView.as_view(),
         name='miscellaneous'),
-    url(r'^random/$', 
-        RandomView.as_view(),
-        name='random'),
+    url(r'^about/$', 
+        TemplateView.as_view(template_name='about.html'),
+        name='about'),
+
+    # app namespaces
+    url(r'^projects/',
+        include('projects.urls', namespace='projects')),  
+    url(r'^elements/',
+        include('elements.urls', namespace='elements')),  
+    url(r'^types/',
+        include('project_types.urls', namespace='project_types')),  
+    url(r'^units/',
+        include('units.urls', namespace='units')),  
 
     # userauth URLs
     url(r'^accounts/login/$',
@@ -28,16 +43,15 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('registration.backends.default.urls')),  
     
     # Uncomment the admin/doc line below to enable admin documentation:
-    #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    #url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
+    
+    url(r'^autocomplete/', include('autocomplete_light.urls')),
 )
 
 """
-url(r'^project/', 
-    include("serendipity_engine.projects.urls",
-    namespace="projects")),
 url(r'^project_type/', 
     include("serendipity_engine.project_types.urls",
     namespace="types")),

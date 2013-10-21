@@ -1,21 +1,57 @@
 <ul class="nav nav-tabs nav-stacked span3">
-    <li><a href="#">About</a></li>
-    <li class="nav-header" data-toggle="collapse" data-target="#typelist">Show only...</li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li class="nav-header" data-toggle="collapse" data-target="#typelist">
+        <i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
+        {% if show_sidebar_url %}
+        Projects by type...
+        {% else %}
+        Show only...
+        {% endif %}
+    </li>
     <ul id="typelist" class="nav nav-tabs nav-stacked">
-        {% for type in types %}
-            <li><a href="#">{{ type.name }}</a></li>
+        {% for project_type in project_types %}
+            {% with project_type.name as name %}
+                <li><a href="{% if show_sidebar_url %}
+                {% url 'project_types:detail_view' project_type.id %}
+                {% else %}#{% endif %}" 
+                id="id_{{ name|slugify }}">{{ name }}</a></li>
+            {% endwith %}
         {% endfor %}
     </ul>
-    <li class="nav-header" data-toggle="collapse" data-target="#elementlist">Show only...</li>
+    <li class="nav-header collapsed" data-toggle="collapse" data-target="#elementlist">
+        <i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
+        {% if show_sidebar_url %}
+        Projects by component...
+        {% else %}
+        Filter by component...
+        {% endif %}
+    </li>
     <ul id="elementlist" class="nav nav-tabs nav-stacked collapse">
         {% for element in elements %}
-            <li><a href="#">{{ unit.name }}</a></li>
+            {% with element.name as name %}
+                <li><a href="{% if show_sidebar_url %}
+                {% url 'elements:detail_view' element.id %}
+                {% else %}#{% endif %}" 
+                id="id_{{ name|slugify }}">{{ name }}</a></li>
+            {% endwith %}
         {% endfor %}
     </ul>
-    <li class="nav-header" data-toggle="collapse" data-target="#unitlist">Show only...</li>
+    <li class="nav-header collapsed" data-toggle="collapse" data-target="#unitlist">
+        <i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
+        {% if show_sidebar_url %}
+        Projects by unit...
+        {% else %}
+        Filter by unit...
+        {% endif %}
+    </li>
     <ul id="unitlist" class="nav nav-tabs nav-stacked collapse">
         {% for unit in units %}
-            <li><a href="#">{{ unit.name }}</a></li>
+            {% with unit.name as name %}
+                <li><a href="{% if show_sidebar_url %}
+                {% url 'units:detail_view' unit.id %}
+                {% else %}#{% endif %}" 
+                id="id_{{ name|slugify }}">{{ name }}</a></li>
+            {% endwith %}
         {% endfor %}
     </ul>
     {% if user.is_authenticated %}

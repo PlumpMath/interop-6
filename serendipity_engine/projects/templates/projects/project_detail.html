@@ -1,0 +1,42 @@
+{% extends "base_two_columns.html" %}
+
+{% block content %}
+<div class="span9">
+    <h3>{{ object.name }}</h3>
+    {% if object.description %}
+        <blockquote>{{ object.description }}</blockquote>
+    {% endif %}
+    <strong>Project URL:</strong> <a href="{{ object.url }}">{{ object.url }}</a><br />
+    
+    <h4>Contact information</h4>
+    <strong>Email:</strong> {{ object.contact_email }}<br />
+    <strong>Phone:</strong> {{ object.contact_phone }}<br />
+    <strong>Office location:</strong> {{ object.office_location }}<br />
+    <br />
+
+    <h4>Units</h4>
+    {% for unit in object.units.all %}
+        {{ unit }}<br />
+    {% endfor %}
+    <h4>Contributors</h4>
+    {% for contributor in object.contributors.all %}
+        {{ contributor }}<br />
+    {% endfor %}
+
+    <h4>Components</h4>
+    {% for element in object.elements.all %}
+        {{ element }}<br />
+    {% endfor %}
+
+    <h4>Status</h4>
+    {{ object.status }}<br />
+    <strong>Start date:</strong> {{ object.start_date }}<br />
+    <strong>End date:</strong> {{ object.end_date }}<br />
+    
+    <hr>
+    {% if user.is_authenticated %}
+        <a href="{% url 'projects:edit_view' object.id %}" class="btn">
+        Edit this project</a>
+    {% endif %}
+</div>
+{% endblock %}

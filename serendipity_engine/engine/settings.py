@@ -1,5 +1,6 @@
 # Django settings for serendipity_engine project.
 import os.path
+import django.conf.global_settings as DEFAULT_SETTINGS
 
 home = os.path.expanduser("~")
 PROJECT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
@@ -117,6 +118,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    # django stuff
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -125,9 +127,19 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    
+    # third party apps
     'crispy_forms',
     'registration',
+    'south',
+    'autocomplete_light',
+    
+    # serendipity engine apps
     'engine',
+    'elements',
+    'project_types',
+    'projects',
+    'units',
 )
 
 # django-registration
@@ -161,3 +173,8 @@ LOGGING = {
         },
     }
 }
+
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
+    'engine.context_processors.sidebar_context',
+    'engine.context_processors.show_sidebar_url',
+)

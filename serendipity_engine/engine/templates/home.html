@@ -5,7 +5,18 @@
 {% endblock %}
 
 {% block content %}
-    {% include "tile.html" %}
-    {% include "tile.html" %}
-    {% include "tile.html" %}
+    {% if miscellaenous %}
+        <div class="miscellaneous">
+            <h2>EVERYTHING IS MISCELLANEOUS.</H2>
+        </div>
+    {% endif %}
+    <div>
+        {% for project in projects %}
+            {% include "tile.html" %}
+        {% endfor %}
+    </div>
+    
+    <div class="random span12">
+        <a href="{% url 'projects:random' %}" class="btn btn-large">I'm feeling lucky</a>
+    </div>
 {% endblock %}

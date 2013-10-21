@@ -1,0 +1,16 @@
+{% extends "base_two_columns.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="span9">
+<h3>Projects: {{ object.name }}</h3>
+{% if object.url %}<h4><a href="{{ object.url }}">{{ object.url }}</a></h4>{% endif %}
+{% for project in object.projects.all %}
+<h4><a href="{% url 'projects:detail_view' project.id %}">{{ project }}</a></h4>
+<blockquote><p>{{ project.description }}</p></blockquote>
+{% empty %}
+<p>No projects for {{ object.name }} yet. Why not <a 
+href="{% url 'projects:create_view' %}" class="btn">create one</a>?</p>
+{% endfor %}
+</div>
+{% endblock %}
