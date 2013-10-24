@@ -34,6 +34,8 @@ class Project(models.Model):
         Easiest to generate it here, avoid having to do logic in the
         template.
         """
+        # must exist before we can follow db relationships
+        super(Project, self).save(*args, **kwargs) 
         classlist = ' '
         for unit in self.units.all():
             css_class = 'class_unit_' + str(unit.id) + ' '
@@ -44,4 +46,5 @@ class Project(models.Model):
         css_class = 'class_type_' + str(self.project_type.id)
         classlist += css_class
         self.classlist = classlist
+        # and save our changes
         super(Project, self).save(*args, **kwargs)
