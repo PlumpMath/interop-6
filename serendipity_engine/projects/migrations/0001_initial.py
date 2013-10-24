@@ -18,8 +18,10 @@ class Migration(SchemaMigration):
             ('office_location', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
             ('url', self.gf('django.db.models.fields.URLField')(max_length=200, blank=True)),
             ('status', self.gf('django.db.models.fields.CharField')(max_length=100, blank=True)),
-            ('start_date', self.gf('django.db.models.fields.DateField')(blank=True)),
-            ('end_date', self.gf('django.db.models.fields.DateField')(blank=True)),
+            ('start_date', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
+            ('end_date', self.gf('django.db.models.fields.DateField')(null=True, blank=True)),
+            ('project_type', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='projects', null=True, to=orm['project_types.ProjectType'])),
+            ('classlist', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
         ))
         db.send_create_signal(u'projects', ['Project'])
 
@@ -71,18 +73,26 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '50'})
         },
+        u'project_types.projecttype': {
+            'Meta': {'object_name': 'ProjectType'},
+            'description': ('django.db.models.fields.TextField', [], {}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '50'})
+        },
         u'projects.project': {
             'Meta': {'object_name': 'Project'},
+            'classlist': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'contact_email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
             'contact_phone': ('django.db.models.fields.CharField', [], {'max_length': '20', 'blank': 'True'}),
             'contributors': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['units.Contributor']", 'symmetrical': 'False', 'blank': 'True'}),
             'description': ('django.db.models.fields.TextField', [], {}),
-            'elements': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['elements.Element']", 'symmetrical': 'False', 'blank': 'True'}),
-            'end_date': ('django.db.models.fields.DateField', [], {'blank': 'True'}),
+            'elements': ('django.db.models.fields.related.ManyToManyField', [], {'symmetrical': 'False', 'related_name': "'projects'", 'blank': 'True', 'to': u"orm['elements.Element']"}),
+            'end_date': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'office_location': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
-            'start_date': ('django.db.models.fields.DateField', [], {'blank': 'True'}),
+            'project_type': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'projects'", 'null': 'True', 'to': u"orm['project_types.ProjectType']"}),
+            'start_date': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
             'status': ('django.db.models.fields.CharField', [], {'max_length': '100', 'blank': 'True'}),
             'units': ('django.db.models.fields.related.ManyToManyField', [], {'symmetrical': 'False', 'related_name': "'projects'", 'blank': 'True', 'to': u"orm['units.Unit']"}),
             'url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'})
