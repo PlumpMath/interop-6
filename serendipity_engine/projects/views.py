@@ -19,6 +19,7 @@ class ProjectDetailView(DetailView):
 
 class ProjectEditView(UpdateView):
     model = Project
+    form_class = ProjectForm
 
     def get_success_url(self):
         messages.add_message(self.request, messages.SUCCESS,

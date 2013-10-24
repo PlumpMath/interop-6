@@ -9,5 +9,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
     class Meta:
         model = Project
         widgets = autocomplete_light.get_widgets_dict(Project)
-
-        print widgets
+        fields = ('name', 'description', 'url', 'contact_email',
+                  'contact_phone', 'office_location', 'units', 
+                  'contributors', 'status', 'start_date', 'end_date',
+                  'elements', 'project_type')
