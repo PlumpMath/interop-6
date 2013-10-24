@@ -3,3 +3,4 @@
 *.pyc
 collectedstatic/
 *.db
+build/

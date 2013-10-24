@@ -3,7 +3,7 @@ import os.path
 import django.conf.global_settings as DEFAULT_SETTINGS
 
 home = os.path.expanduser("~")
-PROJECT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
+PROJECT_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..')
 
 def rel(*x):
     return os.path.abspath(os.path.join(PROJECT_ROOT, *x))
@@ -177,4 +177,5 @@ LOGGING = {
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
     'engine.context_processors.sidebar_context',
     'engine.context_processors.show_sidebar_url',
+    'django.core.context_processors.request',
 )

@@ -1,0 +1,1 @@
+web: gunicorn serendipity_engine.engine.wsgi:application

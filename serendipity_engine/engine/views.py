@@ -15,6 +15,3 @@ class MiscellaneousView(HomeView):
         context = super(MiscellaneousView, self).get_context_data(**kwargs)
         context['miscellaenous'] = True
         return context
-        
-class RandomView(RedirectView):
-    pass

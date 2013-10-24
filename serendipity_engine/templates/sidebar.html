@@ -1,5 +1,11 @@
-<ul class="nav nav-tabs nav-stacked span3">
-    <li><a href="{% url 'about' %}">About</a></li>
+{% url 'home' as home %}
+{% url 'about' as about %}
+
+<ul class="nav nav-tabs nav-stacked span3 {% if not show_sidebar_url %}filterable{% endif %}">
+    <li {% if request.path == home %} class="active"{% endif %}>
+        <a href="{% url 'home' %}">Home</a></li>
+    <li {% if request.path == about %} class="active"{% endif %}>
+        <a href="{% url 'about' %}">About</a></li>
     <li class="nav-header" data-toggle="collapse" data-target="#typelist">
         <i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
         {% if show_sidebar_url %}
@@ -8,14 +14,13 @@
         Show only...
         {% endif %}
     </li>
-    <ul id="typelist" class="nav nav-tabs nav-stacked">
+    <ul id="typelist" class="nav nav-tabs nav-stacked facetlist">
         {% for project_type in project_types %}
-            {% with project_type.name as name %}
-                <li><a href="{% if show_sidebar_url %}
+            {% with project_type.name as name %}{% with project_type.id as id %}
+                <li id="id_type_{{ id }}"><a href="{% if show_sidebar_url %}
                 {% url 'project_types:detail_view' project_type.id %}
-                {% else %}#{% endif %}" 
-                id="id_{{ name|slugify }}">{{ name }}</a></li>
-            {% endwith %}
+                {% else %}#{% endif %}">{{ name }}</a></li>
+            {% endwith %}{% endwith %}
         {% endfor %}
     </ul>
     <li class="nav-header collapsed" data-toggle="collapse" data-target="#elementlist">
@@ -26,14 +31,13 @@
         Filter by component...
         {% endif %}
     </li>
-    <ul id="elementlist" class="nav nav-tabs nav-stacked collapse">
+    <ul id="elementlist" class="nav nav-tabs nav-stacked facetlist collapse">
         {% for element in elements %}
-            {% with element.name as name %}
-                <li><a href="{% if show_sidebar_url %}
+            {% with element.name as name %}{% with element.id as id %}
+                <li id="id_element_{{ id }}"><a href="{% if show_sidebar_url %}
                 {% url 'elements:detail_view' element.id %}
-                {% else %}#{% endif %}" 
-                id="id_{{ name|slugify }}">{{ name }}</a></li>
-            {% endwith %}
+                {% else %}#{% endif %}">{{ name }}</a></li>
+            {% endwith %}{% endwith %}
         {% endfor %}
     </ul>
     <li class="nav-header collapsed" data-toggle="collapse" data-target="#unitlist">
@@ -44,14 +48,13 @@
         Filter by unit...
         {% endif %}
     </li>
-    <ul id="unitlist" class="nav nav-tabs nav-stacked collapse">
+    <ul id="unitlist" class="nav nav-tabs nav-stacked facetlist collapse">
         {% for unit in units %}
-            {% with unit.name as name %}
-                <li><a href="{% if show_sidebar_url %}
+            {% with unit.name as name %}{% with unit.id as id %}
+                <li id="id_unit_{{ id }}"><a href="{% if show_sidebar_url %}
                 {% url 'units:detail_view' unit.id %}
-                {% else %}#{% endif %}" 
-                id="id_{{ name|slugify }}">{{ name }}</a></li>
-            {% endwith %}
+                {% else %}#{% endif %}">{{ name }}</a></li>
+            {% endwith %}{% endwith %}
         {% endfor %}
     </ul>
     {% if user.is_authenticated %}

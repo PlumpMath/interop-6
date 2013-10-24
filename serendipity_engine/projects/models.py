@@ -22,7 +22,26 @@ class Project(models.Model):
     end_date = models.DateField(blank=True, null=True)
     elements = models.ManyToManyField(Element, blank=True, related_name="projects")
     project_type = models.ForeignKey(ProjectType, blank=True, null=True, related_name="projects")
-    
+    classlist = models.TextField(blank=True, null=True)
     
     def __unicode__(self):
         return u'%s' % self.name
+        
+    def save(self, *args, **kwargs):
+        """
+        In the navigation bar we need a list of css classes
+        representing everything we might filter on for display.
+        Easiest to generate it here, avoid having to do logic in the
+        template.
+        """
+        classlist = ' '
+        for unit in self.units.all():
+            css_class = 'class_unit_' + str(unit.id) + ' '
+            classlist += css_class
+        for element in self.elements.all():
+            css_class = 'class_element_' + str(element.id) + ' '
+            classlist += css_class
+        css_class = 'class_type_' + str(self.project_type.id)
+        classlist += css_class
+        self.classlist = classlist
+        super(Project, self).save(*args, **kwargs)

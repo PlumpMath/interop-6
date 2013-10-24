@@ -1,6 +1,8 @@
 from random import randint
 
+from django.contrib import messages
 from django.core.urlresolvers import reverse_lazy
+from django.http import HttpResponseRedirect
 from django.views.generic import (ListView,
                                   DetailView, 
                                   UpdateView,
@@ -18,6 +20,11 @@ class ProjectDetailView(DetailView):
 class ProjectEditView(UpdateView):
     model = Project
 
+    def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS,
+                             'Hooray, project edited!')
+        return reverse_lazy('projects:detail_view', args=(self.object.id,))
+
 class ProjectCreateView(CreateView):
     model = Project
     form_class = ProjectForm
@@ -27,6 +34,13 @@ class ProjectCreateView(CreateView):
         
 class ProjectRandomView(DetailView):
     model = Project
+    
+    def dispatch(self, request, *args, **kwargs):
+        if Project.objects.count() == 0:
+            # the randint in get_object is only well-defined if there are projects
+            return HttpResponseRedirect('/')
+        else:
+            return super(ProjectRandomView, self).dispatch(request, *args, **kwargs)
     
     def get_object(self):
         count = Project.objects.count()

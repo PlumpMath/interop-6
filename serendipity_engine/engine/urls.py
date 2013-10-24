@@ -10,7 +10,7 @@ autocomplete_light.autodiscover()
 from django.contrib import admin
 admin.autodiscover()
 
-from .views import HomeView, MiscellaneousView, RandomView
+from .views import HomeView, MiscellaneousView
 
 urlpatterns = patterns('',
     url(r'^$', 

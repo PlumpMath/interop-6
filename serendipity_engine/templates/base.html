@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -99,6 +101,14 @@
                 width: 21.2765957446809%;
             }
             
+            ul.nav > li.active a {
+                font-weight: bold;
+            }
+            
+            ul.nav.filterable .facetlist li.active a {
+                background: #eee;
+            }
+            
             .nav li.nav-header {
                 margin: 0;
                 border-color: rgb(221, 221, 221);
@@ -150,6 +160,14 @@
             </div>
         </header>
         <div class="container-fluid">
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-info 
+                {% if message.tags %}{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
             <div class="row-fluid">
                 {% block layout %}
                 {% endblock %}
@@ -169,7 +187,12 @@
         </footer>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        {% if not show_sidebar_url %}
+        <script src="{% static 'js/sidebar_filter.js' %}"></script>
+        {% else %}
+        {# incompatible with sidebar_filter, and not simultaneously needed #}
         {% include 'autocomplete_light/static.html' %}
+        {% endif %}
     </body>
 </html>
 
