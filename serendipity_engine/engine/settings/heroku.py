@@ -1,3 +1,5 @@
+import sys
+
 from base import *
 
 # Parse database configuration from $DATABASE_URL
@@ -19,3 +21,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+sys.path.append("/app/serendipity_engine")

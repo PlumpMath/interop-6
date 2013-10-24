@@ -1,6 +1,6 @@
-from elements.models import Element
-from project_types.models import ProjectType
-from units.models import Unit
+from serendipity_engine.elements.models import Element
+from serendipity_engine.project_types.models import ProjectType
+from serendipity_engine.units.models import Unit
 
 def sidebar_context(request):
     elements = Element.objects.all()

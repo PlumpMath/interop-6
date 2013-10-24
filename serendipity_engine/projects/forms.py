@@ -3,7 +3,7 @@ from django import forms
 import autocomplete_light
 
 from .models import Project
-from units.models import Unit
+from serendipity_engine.units.models import Unit
 
 class ProjectForm(autocomplete_light.FixedModelForm):
     class Meta:

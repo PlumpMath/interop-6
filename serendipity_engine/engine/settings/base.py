@@ -108,10 +108,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'engine.urls'
+ROOT_URLCONF = 'serendipity_engine.engine.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'engine.wsgi.application'
+WSGI_APPLICATION = 'serendipity_engine.engine.wsgi.application'
 
 TEMPLATE_DIRS = (
     rel('templates'),
@@ -135,11 +135,11 @@ INSTALLED_APPS = (
     'autocomplete_light',
     
     # serendipity engine apps
-    'engine',
-    'elements',
-    'project_types',
-    'projects',
-    'units',
+    'serendipity_engine.engine',
+    'serendipity_engine.elements',
+    'serendipity_engine.project_types',
+    'serendipity_engine.projects',
+    'serendipity_engine.units',
 )
 
 # django-registration
@@ -175,7 +175,7 @@ LOGGING = {
 }
 
 TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-    'engine.context_processors.sidebar_context',
-    'engine.context_processors.show_sidebar_url',
+    'serendipity_engine.engine.context_processors.sidebar_context',
+    'serendipity_engine.engine.context_processors.show_sidebar_url',
     'django.core.context_processors.request',
 )

@@ -2,9 +2,9 @@ import logging
 
 from django.db import models
 
-from elements.models import Element
-from project_types.models import ProjectType
-from units.models import Unit, Contributor
+from serendipity_engine.elements.models import Element
+from serendipity_engine.project_types.models import ProjectType
+from serendipity_engine.units.models import Unit, Contributor
 
 logger = logging.getLogger(__name__)
 

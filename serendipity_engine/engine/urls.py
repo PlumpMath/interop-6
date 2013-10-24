@@ -25,13 +25,13 @@ urlpatterns = patterns('',
 
     # app namespaces
     url(r'^projects/',
-        include('projects.urls', namespace='projects')),  
+        include('serendipity_engine.projects.urls', namespace='projects')),  
     url(r'^elements/',
-        include('elements.urls', namespace='elements')),  
+        include('serendipity_engine.elements.urls', namespace='elements')),  
     url(r'^types/',
-        include('project_types.urls', namespace='project_types')),  
+        include('serendipity_engine.project_types.urls', namespace='project_types')),  
     url(r'^units/',
-        include('units.urls', namespace='units')),  
+        include('serendipity_engine.units.urls', namespace='units')),  
 
     # userauth URLs
     url(r'^accounts/login/$',

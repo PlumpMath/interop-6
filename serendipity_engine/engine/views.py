@@ -1,5 +1,5 @@
 from django.views.generic.base import TemplateView, RedirectView
-from projects.models import Project
+from serendipity_engine.projects.models import Project
   
 class HomeView(TemplateView):
     template_name = "home.html"      
