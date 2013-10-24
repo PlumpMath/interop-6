@@ -6,6 +6,11 @@ from django.db import models
 
 
 class Migration(SchemaMigration):
+    depends_on = (
+        ("serendipity_engine.units", "0001_initial"),
+        ("serendipity_engine.project_type", "0001_initial"),
+        ("serendipity_engine.elements", "0001_initial"),
+    )
 
     def forwards(self, orm):
         # Adding model 'Project'
