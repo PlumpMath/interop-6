@@ -30,3 +30,10 @@ application = get_wsgi_application()
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication
 # application = HelloWorldApplication(application)
+
+# heroku stuff
+if 'DATABASE_URL' in os.environ.keys():
+    from django.core.wsgi import get_wsgi_application
+    from dj_static import Cling
+    
+    application = Cling(get_wsgi_application())
