@@ -13,7 +13,7 @@ class Migration(SchemaMigration):
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
         ))
-        db.send_create_signal(u'elements', ['Element'])
+        db.send_create_signal('elements', ['Element'])
 
 
     def backwards(self, orm):
@@ -22,7 +22,7 @@ class Migration(SchemaMigration):
 
 
     models = {
-        u'elements.element': {
+        'elements.element': {
             'Meta': {'object_name': 'Element'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '50'})

@@ -10,8 +10,9 @@ from django.views.generic import (ListView,
 
 from serendipity_engine.elements.models import Element
 
-from .models import Project
 from .forms import ProjectForm
+from .helpers import process_new_item_fields
+from .models import Project
                                   
 class ProjectListView(ListView):
     model = Project
@@ -22,6 +23,10 @@ class ProjectDetailView(DetailView):
 class ProjectEditView(UpdateView):
     model = Project
     form_class = ProjectForm
+
+    def form_valid(self, form):
+        process_new_item_fields(form, self.object)
+        return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
         messages.add_message(self.request, messages.SUCCESS,
@@ -35,25 +40,12 @@ class ProjectCreateView(CreateView):
     def form_valid(self, form):
         # object needs to exist before we can add manytomany relationships
         self.object = form.save()
-        new_elements = form.cleaned_data['add_new_elements']
-        new_elements = new_elements.split(',')
-        
-        for new_element in new_elements:
-            # begone, spurious whitespace
-            new_element = new_element.lstrip().rstrip()
-            try:
-                # if they've somehow put something that's already in our
-                # db into the new elements field, use the existing element
-                element = Element.objects.get(name__iexact=new_element)
-            except:
-                # otherwise, create a new element
-                element = Element()
-                element.name = new_element
-                element.save()
-            self.object.elements.add(element)
-        return super(ProjectCreateView, self).form_valid(form)
-    
+        process_new_item_fields(form, self.object)
+        return HttpResponseRedirect(self.get_success_url())
+     
     def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS,
+                             'Hooray, project created!')
         return reverse_lazy('projects:detail_view', args=(self.object.id,))
         
 class ProjectRandomView(DetailView):

@@ -9,6 +9,9 @@ from serendipity_engine.units.models import Unit, Contributor, School
 logger = logging.getLogger(__name__)
 
 class Project(models.Model):
+    class Meta:
+        app_label = 'projects'
+        
     name = models.CharField(max_length=100)
     short_description = models.CharField(max_length=140,
         help_text="Tweet-length (140 chars) description of the project for "
@@ -19,12 +22,13 @@ class Project(models.Model):
     contact_phone = models.CharField(max_length=20, blank=True)
     units = models.ManyToManyField(Unit, blank=True, 
         related_name="projects",
-        verbose_name="Group",
-        help_text="Group with primary responsibility for the project")
+        verbose_name="Group(s)",
+        help_text="Group(s) with primary responsibility for the project")
     school = models.ManyToManyField(School, blank=True,
         help_text="Harvard unit(s) within which the group resides")
     url = models.URLField(blank=True, help_text="Project's home page")
-    contributors = models.ManyToManyField(Contributor, blank=True)
+    contributors = models.ManyToManyField(Contributor, 
+        blank=True, related_name="projects")
     status = models.CharField(max_length=100, blank=True,
         help_text="Current status of the project")
     start_date = models.DateField(blank=True, null=True,

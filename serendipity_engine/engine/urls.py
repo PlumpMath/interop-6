@@ -31,7 +31,7 @@ urlpatterns = patterns('',
     url(r'^types/',
         include('serendipity_engine.project_types.urls',
             namespace='project_types')),
-    url(r'^units/',
+    url(r'^groups/',
         include('serendipity_engine.units.urls', namespace='units')),
 
     # userauth URLs

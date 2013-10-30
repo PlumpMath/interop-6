@@ -14,20 +14,20 @@ class Migration(SchemaMigration):
             ('name', self.gf('django.db.models.fields.CharField')(max_length=100)),
             ('url', self.gf('django.db.models.fields.URLField')(max_length=200, blank=True)),
         ))
-        db.send_create_signal(u'units', ['Unit'])
+        db.send_create_signal('units', ['Unit'])
 
         # Adding model 'School'
         db.create_table(u'units_school', (
             (u'unit_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['units.Unit'], unique=True, primary_key=True)),
         ))
-        db.send_create_signal(u'units', ['School'])
+        db.send_create_signal('units', ['School'])
 
         # Adding M2M table for field subunits on 'School'
         m2m_table_name = db.shorten_name(u'units_school_subunits')
         db.create_table(m2m_table_name, (
             ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('school', models.ForeignKey(orm[u'units.school'], null=False)),
-            ('unit', models.ForeignKey(orm[u'units.unit'], null=False))
+            ('school', models.ForeignKey(orm['units.school'], null=False)),
+            ('unit', models.ForeignKey(orm['units.unit'], null=False))
         ))
         db.create_unique(m2m_table_name, ['school_id', 'unit_id'])
 
@@ -38,7 +38,7 @@ class Migration(SchemaMigration):
             ('contact_email', self.gf('django.db.models.fields.EmailField')(max_length=75, blank=True)),
             ('contact_phone', self.gf('django.db.models.fields.CharField')(max_length=20, blank=True)),
         ))
-        db.send_create_signal(u'units', ['Contributor'])
+        db.send_create_signal('units', ['Contributor'])
 
 
     def backwards(self, orm):
@@ -56,19 +56,19 @@ class Migration(SchemaMigration):
 
 
     models = {
-        u'units.contributor': {
+        'units.contributor': {
             'Meta': {'object_name': 'Contributor'},
             'contact_email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
             'contact_phone': ('django.db.models.fields.CharField', [], {'max_length': '20', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
-        u'units.school': {
-            'Meta': {'object_name': 'School', '_ormbases': [u'units.Unit']},
-            'subunits': ('django.db.models.fields.related.ManyToManyField', [], {'related_name': "'schools'", 'symmetrical': 'False', 'to': u"orm['units.Unit']"}),
-            u'unit_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['units.Unit']", 'unique': 'True', 'primary_key': 'True'})
+        'units.school': {
+            'Meta': {'object_name': 'School', '_ormbases': ['units.Unit']},
+            'subunits': ('django.db.models.fields.related.ManyToManyField', [], {'related_name': "'schools'", 'symmetrical': 'False', 'to': "orm['units.Unit']"}),
+            u'unit_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['units.Unit']", 'unique': 'True', 'primary_key': 'True'})
         },
-        u'units.unit': {
+        'units.unit': {
             'Meta': {'object_name': 'Unit'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),

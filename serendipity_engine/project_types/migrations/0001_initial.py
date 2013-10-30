@@ -14,7 +14,7 @@ class Migration(SchemaMigration):
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
             ('description', self.gf('django.db.models.fields.TextField')()),
         ))
-        db.send_create_signal(u'project_types', ['ProjectType'])
+        db.send_create_signal('project_types', ['ProjectType'])
 
 
     def backwards(self, orm):
@@ -23,7 +23,7 @@ class Migration(SchemaMigration):
 
 
     models = {
-        u'project_types.projecttype': {
+        'project_types.projecttype': {
             'Meta': {'object_name': 'ProjectType'},
             'description': ('django.db.models.fields.TextField', [], {}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),

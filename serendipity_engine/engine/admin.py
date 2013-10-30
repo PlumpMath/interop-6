@@ -20,9 +20,8 @@ admin.site.register(ProjectType, ProjectTypeAdmin)
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'url', 'project_type')
     fields = ('name', 'description', 'contact_email', 'contact_phone',
-              'office_location', 'units', 'url', 'contributors',
-              'status', 'start_date', 'end_date', 'elements',
-              'project_type')
+              'units', 'url', 'contributors', 'status', 'start_date', 
+              'end_date', 'elements', 'project_type')
 
 admin.site.register(Project, ProjectAdmin)
 

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="span9">
     <h3>{{ object.name }}</h3>
-    {{ object.short_description }}
+    {{ object.short_description }}<br />
     {% if object.description %}
         <blockquote>{{ object.description }}</blockquote>
     {% endif %}
@@ -14,18 +14,21 @@
     <strong>Phone:</strong> {{ object.contact_phone }}<br />
     <br />
 
-    <h4>Units</h4>
+    <h4>Groups</h4>
     {% for unit in object.units.all %}
-        {{ unit }}<br />
+        <a href="{% url 'units:detail_view' unit.id%}">
+          {{ unit }}</a><br />
     {% endfor %}
     <h4>Contributors</h4>
     {% for contributor in object.contributors.all %}
-        {{ contributor }}<br />
+        <a href="{% url 'units:contributor_view' contributor.id %}">
+          {{ contributor }}</a><br />
     {% endfor %}
 
     <h4>Components</h4>
     {% for element in object.elements.all %}
-        {{ element }}<br />
+        <a href="{% url 'elements:detail_view' element.id %}">
+          {{ element }}</a><br />
     {% endfor %}
 
     <h4>Status</h4>
