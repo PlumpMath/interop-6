@@ -11,7 +11,9 @@ class Unit(models.Model):
     def __unicode__(self):
         return u'%s' % self.name
         
-        
+class School(Unit):
+    subunits = models.ManyToManyField(Unit, related_name="schools")
+
 class Contributor(models.Model):
     name = models.CharField(max_length=100)
     contact_email = models.EmailField(blank=True)

@@ -3,6 +3,7 @@
 {% block content %}
 <div class="span9">
     <h3>{{ object.name }}</h3>
+    {{ object.short_description }}
     {% if object.description %}
         <blockquote>{{ object.description }}</blockquote>
     {% endif %}
@@ -11,7 +12,6 @@
     <h4>Contact information</h4>
     <strong>Email:</strong> {{ object.contact_email }}<br />
     <strong>Phone:</strong> {{ object.contact_phone }}<br />
-    <strong>Office location:</strong> {{ object.office_location }}<br />
     <br />
 
     <h4>Units</h4>

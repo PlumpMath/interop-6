@@ -1,17 +1,16 @@
-<div class="tile span3 well well-small {{ project.classlist }}">
+<div class="tile span4 well well-small {{ project.classlist }}">
     <div>
         <h3>{{ project.name }}</h3>
         <h4>{{ project.unit }}</h4>
-        <p>{{ project.description|truncatechars:140 }}</p>
+        <p>{{ project.short_description }}</p>
     </div>
-    <h4 class="bar"><i class="icon-share-alt"></i> Projects this uses</h4>
-    <h4 class="bar"><i class="icon-share-alt icon-flip-horizontal"></i> 
-        Projects using this
-    </h4>
-    <h4 class="bar"><i class="icon-link"></i> Components</h4>
+    <h4 class="bar"><i class="icon-link"></i> Building blocks</h4>
     {% for element in project.elements.all %}
         <a href="{% url 'elements:detail_view' element.id %}">
         {{ element }}</a>{% if not forloop.last %}, {% endif %}
+    {% empty %}
+        None known. <a href="{% url 'projects:edit_view' project.id %}">
+        Add some?</a>
     {% endfor %}
     <h4 class="bar last">
         <a href="{% url 'projects:detail_view' project.id %}">Details</a>
