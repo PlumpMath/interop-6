@@ -10,7 +10,7 @@ autocomplete_light.autodiscover()
 from django.contrib import admin
 admin.autodiscover()
 
-from .views import HomeView, MiscellaneousView
+from .views import HomeView, MiscellaneousView, SerendipityRegistrationView
 
 urlpatterns = patterns('',
     url(r'^$',
@@ -41,6 +41,9 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$',
         'django.contrib.auth.views.logout_then_login',
         name='logout'),
+    url(r'^accounts/register/$',
+	      SerendipityRegistrationView.as_view(),
+        name='registration_register'),
     url(r'^accounts/', include('registration.backends.default.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

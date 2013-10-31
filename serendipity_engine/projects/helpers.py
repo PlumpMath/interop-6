@@ -6,18 +6,19 @@ def process_new_items(new_items, app_label, model_name):
     new_items = new_items.split(',')
     return_list = []
     for new_item in new_items:
-        # begone, spurious whitespace
-        new_item = new_item.lstrip().rstrip()
-        try:
-            # if they've somehow put something that's already in our
-            # db into the new elements field, use the existing element
-            item = my_model.objects.get(name__iexact=new_item)
-        except:
-            # otherwise, create a new element
-            item = my_model()
-            item.name = new_item
-            item.save()
-        return_list += [item]
+        if not new_item.isspace():
+          # begone, spurious whitespace
+          new_item = new_item.lstrip().rstrip()
+          try:
+              # if they've somehow put something that's already in our
+              # db into the new elements field, use the existing element
+              item = my_model.objects.get(name__iexact=new_item)
+          except:
+              # otherwise, create a new element
+              item = my_model()
+              item.name = new_item
+              item.save()
+          return_list += [item]
     return return_list
     
 def process_new_item_fields(form, object):

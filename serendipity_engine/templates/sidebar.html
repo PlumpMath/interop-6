@@ -6,6 +6,7 @@
         <a href="{% url 'home' %}">Home</a></li>
     <li {% if request.path == about %} class="active"{% endif %}>
         <a href="{% url 'about' %}">About</a></li>
+    <li><a href="https://wiki.harvard.edu/confluence/display/HLSLibraryInteroperability/Home">Wiki</a></li>
     <li class="nav-header" data-toggle="collapse" data-target="#typelist">
         <i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
         {% if show_sidebar_url %}
@@ -58,8 +59,10 @@
         {% endfor %}
     </ul>
     {% if user.is_authenticated %}
+    <li><a href="{% url 'projects:create_view' %}">Add new project</a></li>
     <li><a href="{% url 'logout' %}">Log out</a></li>
     {% else %}
+    <li><a href="{% url 'registration_register' %}">Get an account</a></li>
     <li><a href="{% url 'login' %}">Log in</a></li>
     {% endif %}
 </ul>
