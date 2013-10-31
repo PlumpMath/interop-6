@@ -2,6 +2,11 @@
 
 {% block content %}
     <h2>Woot! Your account is active.</h2>
-    <p>Your account has been approved. Why not <a href="#">add your project
-    </a> to the database?</p>
+    <p>Your account has been approved. Why not 
+    <a href="{% url 'projects:create_view' %}">add your project</a> to the 
+    site?</p>
+    
+    <p>If you aren't ready to add a project yet, you can 
+    <a href="{% url 'home' %}">explore them all</a> or 
+    <a href="{% url 'random' %}">see a random project</a>.
 {% endblock %}
