@@ -87,6 +87,17 @@
             .well {
                 background-color: #fafafa;
             }
+            
+            .tile {
+                margin-left: 0 !important;
+                margin-right: 1.418439716312% !important;
+            }
+            
+            .tile.filtered {
+                display: none;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
 
             .random {
                 text-align: center;
@@ -191,6 +202,8 @@
         {# incompatible with sidebar_filter, and not simultaneously needed #}
         {% include 'autocomplete_light/static.html' %}
         {% endif %}
+        {% block extra_js %}
+        {% endblock %}
     </body>
 </html>
 

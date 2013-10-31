@@ -26,7 +26,7 @@ $j(document).ready(function() {
             // filtering: show everything
             if(showList.length <= 0) {
                 $j('.tile').each(function() {
-                    $j(this).css('display','inherit');
+                    $j(this).removeClass('filtered');
                 });
                 return;
             }
@@ -49,7 +49,7 @@ $j(document).ready(function() {
                     }
                 }
                 if(hide_condition==1){
-                    element.css('display', 'none');
+                    element.addClass('filtered');
                 }
             });
             
@@ -60,13 +60,13 @@ $j(document).ready(function() {
                 // if we haven't been filtering anything yet,
                 // start to: hide everything not selected
                 $j('.tile').each(function() {
-                    $j(this).css('display', 'none');
+                    $j(this).addClass('filtered');
                 });
             }
             showList.push(identifier);
             $j('.class_' + identifier).each(function() {
-                if ($j(this).css('display')=='none') {
-                    $j(this).css('display', 'inherit');
+                if ($j(this).hasClass('filtered')) {
+                    $j(this).removeClass('filtered');
                 }
             });
         }
