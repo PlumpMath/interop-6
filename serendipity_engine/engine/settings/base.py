@@ -1,5 +1,5 @@
 # Django settings for serendipity_engine project.
-import os.path
+import os
 import django.conf.global_settings as DEFAULT_SETTINGS
 
 home = os.path.expanduser("~")
@@ -47,7 +47,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = True
+USE_I18N = False
 
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale.
@@ -89,7 +89,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '&=8+6teg%u@gh)ut67$j=i)o_)pl8&k%w0f(5t5&-#l0%y((0-'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
