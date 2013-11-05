@@ -6,13 +6,15 @@
   production settings file 
   (`export DJANGO_SETTINGS_MODULE=serendipity_engine.engine.settings.production`)
 * Set up a mysql db for the project.
+* Create a user with all privileges on that db.
 * Make sure email sending functionality exists
 * set a DJANGO_EMAIL_PASSWORD environment variable with the pw your
   user will need to log into your email sending functionality (no
   passwords in Django settings files themselves!)
 
 ## In serendipity_engine/engine/settings/production.py
-* Edit DATABASES in production.py to point to your MySQL db.
+* Edit DATABASES in production.py to point to your MySQL db, with the user
+  and password you created.
 * Edit ALLOWED_HOSTS in production.py to contain string(s) of the URL(s)
   you'll be serving the project from.
 * You may want to customize your logging configuration (LOGGING in

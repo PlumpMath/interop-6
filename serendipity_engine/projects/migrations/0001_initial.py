@@ -96,7 +96,7 @@ class Migration(SchemaMigration):
             'classlist': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'contact_email': ('django.db.models.fields.EmailField', [], {'max_length': '75', 'blank': 'True'}),
             'contact_phone': ('django.db.models.fields.CharField', [], {'max_length': '20', 'blank': 'True'}),
-            'contributors': ('django.db.models.fields.related.ManyToManyField', [], {'to': "orm['units.Contributor']", 'symmetrical': 'False', 'blank': 'True'}),
+            'contributors': ('django.db.models.fields.related.ManyToManyField', [], {'symmetrical': 'False', 'related_name': "'projects'", 'blank': 'True', 'to': "orm['units.Contributor']"}),
             'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'elements': ('django.db.models.fields.related.ManyToManyField', [], {'symmetrical': 'False', 'related_name': "'projects'", 'blank': 'True', 'to': "orm['elements.Element']"}),
             'end_date': ('django.db.models.fields.DateField', [], {'null': 'True', 'blank': 'True'}),
@@ -118,9 +118,11 @@ class Migration(SchemaMigration):
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
         'units.school': {
-            'Meta': {'object_name': 'School', '_ormbases': ['units.Unit']},
+            'Meta': {'object_name': 'School'},
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'subunits': ('django.db.models.fields.related.ManyToManyField', [], {'related_name': "'schools'", 'symmetrical': 'False', 'to': "orm['units.Unit']"}),
-            u'unit_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['units.Unit']", 'unique': 'True', 'primary_key': 'True'})
+            'url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'})
         },
         'units.unit': {
             'Meta': {'object_name': 'Unit'},
