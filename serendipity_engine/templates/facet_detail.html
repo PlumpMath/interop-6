@@ -16,5 +16,8 @@
       {% include "facet_project_list.html" %}
     {% endwith %}
   {% endif %}
+  {% if edit_url %}
+    <a href="{{ edit_url }}" class="btn">Edit {{ object.name }}</a>
+  {% endif %}
 </div>
 {% endblock %}

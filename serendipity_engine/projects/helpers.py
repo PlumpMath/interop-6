@@ -6,7 +6,7 @@ from django.db.models.loading import get_model
 
 def process_new_items(new_items, app_label, model_name):
     """
-    Create new database objects, if needed, for each comma-separated
+    Creates new database objects, if needed, for each comma-separated
     item in our new_items list
     """
     my_model = get_model(app_label, model_name)
@@ -31,7 +31,7 @@ def process_new_items(new_items, app_label, model_name):
 
 def process_new_item_fields(form, my_project):
     """
-    Create new database objects for elements, units, and contributors
+    Creates new database objects for elements, units, and contributors
     from the project creation form. Add them to the project's relationships.
     """
     new_elements = form.cleaned_data['add_new_elements']

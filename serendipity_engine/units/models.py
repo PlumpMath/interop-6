@@ -17,7 +17,7 @@ class BaseUnit(models.Model):
         abstract = True
         app_label = 'units'
         
-class Unit(BaseUnit):            
+class Unit(BaseUnit):
     class Meta:
         app_label = 'units'
 
@@ -29,6 +29,9 @@ class School(BaseUnit):
 
     class Meta:
         app_label = 'units'
+        
+    def __unicode__(self):
+        return u'%s' % self.name
         
 class Contributor(models.Model):
     name = models.CharField(max_length=100)
