@@ -3,7 +3,7 @@ from django.contrib import admin
 from serendipity_engine.elements.models import Element
 from serendipity_engine.project_types.models import ProjectType
 from serendipity_engine.projects.models import Project
-from serendipity_engine.units.models import Unit, Contributor
+from serendipity_engine.units.models import Unit, Contributor, School
 
 class ElementAdmin(admin.ModelAdmin):
     list_display = ('name', 'id')
@@ -30,6 +30,7 @@ class UnitAdmin(admin.ModelAdmin):
     list_display = ('name', 'url', 'id')
 
 admin.site.register(Unit, UnitAdmin)
+admin.site.register(School, UnitAdmin)
 
 
 class ContributorAdmin(admin.ModelAdmin):
