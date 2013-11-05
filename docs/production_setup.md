@@ -5,6 +5,7 @@
 * Set a DJANGO_SETTINGS_MODULE environment variable to point at the
   production settings file 
   (`export DJANGO_SETTINGS_MODULE=serendipity_engine.engine.settings.production`)
+* Set a DJANGO_SECRET_KEY environment variable (ask me).
 * Set up a mysql db for the project.
 * Create a user with all privileges on that db.
 * Make sure email sending functionality exists
