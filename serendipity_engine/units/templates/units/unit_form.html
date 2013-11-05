@@ -1,0 +1,12 @@
+{% extends "base_one_column.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Edit metadata for {{ object.name }}{% endblock %}
+
+{% block content %}
+  <h3>Edit {{ object.name }}</h3>
+  <form method="post">{% csrf_token %}
+    {{ form | crispy }}
+    <input type="submit" class="btn">
+  </form>
+{% endblock %}

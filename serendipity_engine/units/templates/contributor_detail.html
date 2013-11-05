@@ -1,0 +1,40 @@
+{% extends "base_two_columns.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Projects that {{ object.name }} works on{% endblock %}
+
+{% block content %}
+<div class="span9">
+  <h3>{{ object.name }}</h3>
+  {% if contact_email %}
+    {{ contact_email }}<br />
+  {% endif %}
+  {% if contact_phone %}
+    {{ contact_phone }}<br />
+  {% endif %}
+  <h4>{{ object.name }}'s projects</h4>
+  {% with object.projects.all as projects %}
+    {% include "facet_project_list.html" %}
+  {% endwith %}
+  <h4>{{ object.name }}'s affiliations</h4>
+  {% if units %}
+    {{ object.name }} works on projects for the following Harvard group(s):
+    <ul>
+      {% for unit in units %}
+        <li>{{ unit.name }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% if schools %}
+    {{ object.name }} works on projects within the following Harvard school(s):
+    <ul>
+      {% for school in schools %}
+        <li>{{ school.name }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% if edit_url %}
+    <a href="{{ edit_url }}" class="btn">Edit {{ object.name }}</a>
+  {% endif %}
+</div>
+{% endblock %}

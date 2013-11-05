@@ -2,20 +2,22 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="span9">
+<div class="row-fluid">
   <h3>Projects: {{ object.name }}</h3>
   {% if object.url %}
     <h4><a href="{{ object.url }}">{{ object.url }}</a></h4>
   {% endif %}
-  {% if projects_override %}
-    {% with projects_override as projects %}
-      {% include "facet_project_list.html" %}
-    {% endwith %}
-  {% else %}
-    {% with object.projects.all as projects %}
-      {% include "facet_project_list.html" %}
-    {% endwith %}
-  {% endif %}
+  <div class="row-fluid">
+    {% if projects_override %}
+      {% with projects_override as projects %}
+        {% include "facet_project_list.html" %}
+      {% endwith %}
+    {% else %}
+      {% with object.projects.all as projects %}
+        {% include "facet_project_list.html" %}
+      {% endwith %}
+    {% endif %}
+  </div>
   {% if edit_url %}
     <a href="{{ edit_url }}" class="btn">Edit {{ object.name }}</a>
   {% endif %}

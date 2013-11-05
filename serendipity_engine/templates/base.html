@@ -6,15 +6,18 @@
     <head>
         <title>Harvard Interop Serendipity Engine</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/bootstrap_custom/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:700' rel='stylesheet' type='text/css'>
         <!--[if IE 7]>
           <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
         <![endif]-->
         <style type="text/css">
             <!-- see http://www.gse.harvard.edu/guide/palette/ -->
             body {
+                font-family: "PT Sans", "Helvetica Neue", sans-serif;
                 position: relative;
+                font-size: 14px;
             }
             
             a:link, a:active, a:visited {
@@ -28,19 +31,24 @@
             header {
                 height: 200px;
                 margin-bottom: 20px;
-                background-color: #BAC5C6;
+                background-color: #A51C30;
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-color: #BAC5C6;
             }
             
             h1, h2 {
-                font-family: serif;
+                font-family: "Georgia", "Times New Roman", serif;
+                letter-spacing: .05em;
+                font-weight:normal;
             }
-            
+
             header h1 {
                 margin-right: -20px;
                 padding-top: 0.5em;
                 padding-bottom: 0.5em;
                 padding-left: 20px;
-                color: #A51C30;
+                color: #F3F3F1;
             }
             header h2 {
                 color: #D16103;
@@ -74,10 +82,10 @@
             .footer {
                 margin-top: 40px;
                 padding: 20px 0;
-                background: #f5f5f5;
+                background: #F3F3F1;
                 border-top-style: solid;
                 border-top-width: 1px;
-                border-top-color: rgb(229, 229, 229);
+                border-top-color: #BAC5C6;
             }
             
             .footer p {
@@ -85,7 +93,7 @@
             }
 
             .well {
-                background-color: #fafafa;
+                background-color: white;
             }
             
             .tile {
@@ -98,7 +106,31 @@
                 padding: 0 !important;
                 margin: 0 !important;
             }
+            
+            .red_bar, .red_bar_small {
+                border-top: solid 10px #A51C30;
+            }
 
+            .red_bar h3 {
+                background-color: #F3F3F1;
+                margin-top: -19px;
+                margin-right: -19px;
+                margin-left: -19px;
+                padding-left: 19px;
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            
+            .red_bar_small h3 {
+                background-color: #F3F3F1;
+                margin-top: -9px;
+                margin-right: -9px;
+                margin-left: -9px;
+                padding-left: 9px;
+                padding-top:5px;
+                padding-bottom:5px;
+            }
+            
             .random {
                 text-align: center;
             }
