@@ -2,8 +2,8 @@
   <div class="well red_bar span6">
     <h3>{{ project }}</h3>
     <p class="lead">{{ project.short_description }}</p>
-    <a href="{% url 'projects:detail_view' project.id %}">
-    Details</a>
+    <p><a href="{% url 'projects:detail_view' project.id %}">
+    Details</a></p>
   </div>
 {% empty %}
   <p>No projects for {{ object.name }} yet. Why not <a 
