@@ -7,13 +7,14 @@
   {% if object.url %}
     <h4><a href="{{ object.url }}">{{ object.url }}</a></h4>
   {% endif %}
-  {% for project in object.projects.all %}
-    <h4><a href="{% url 'projects:detail_view' project.id %}">
-    {{ project }}</a></h4>
-    <blockquote><p>{{ project.short_description }}</p></blockquote>
-  {% empty %}
-    <p>No projects for {{ object.name }} yet. Why not <a 
-    href="{% url 'projects:create_view' %}" class="btn">create one</a>?</p>
-  {% endfor %}
+  {% if projects_override %}
+    {% with projects_override as projects %}
+      {% include "facet_project_list.html" %}
+    {% endwith %}
+  {% else %}
+    {% with object.projects.all as projects %}
+      {% include "facet_project_list.html" %}
+    {% endwith %}
+  {% endif %}
 </div>
 {% endblock %}

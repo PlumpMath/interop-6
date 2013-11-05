@@ -18,7 +18,9 @@ class Migration(SchemaMigration):
 
         # Adding model 'School'
         db.create_table(u'units_school', (
-            (u'unit_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['units.Unit'], unique=True, primary_key=True)),
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('name', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('url', self.gf('django.db.models.fields.URLField')(max_length=200, blank=True)),
         ))
         db.send_create_signal('units', ['School'])
 
@@ -64,9 +66,11 @@ class Migration(SchemaMigration):
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
         'units.school': {
-            'Meta': {'object_name': 'School', '_ormbases': ['units.Unit']},
+            'Meta': {'object_name': 'School'},
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'subunits': ('django.db.models.fields.related.ManyToManyField', [], {'related_name': "'schools'", 'symmetrical': 'False', 'to': "orm['units.Unit']"}),
-            u'unit_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['units.Unit']", 'unique': 'True', 'primary_key': 'True'})
+            'url': ('django.db.models.fields.URLField', [], {'max_length': '200', 'blank': 'True'})
         },
         'units.unit': {
             'Meta': {'object_name': 'Unit'},

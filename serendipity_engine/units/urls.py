@@ -9,4 +9,7 @@ urlpatterns = patterns('',
     url(r'^people/(?P<pk>\d+)/$', 
         views.ContributorDetailView.as_view(),
         name='contributor_view'),
+    url(r'^schools/(?P<pk>\d+)/$', 
+        views.SchoolDetailView.as_view(),
+        name='school_view'),
 )

@@ -9,9 +9,6 @@ from serendipity_engine.units.models import Unit, Contributor, School
 logger = logging.getLogger(__name__)
 
 class Project(models.Model):
-    class Meta:
-        app_label = 'projects'
-        
     name = models.CharField(max_length=100)
     short_description = models.CharField(max_length=140,
         help_text="Tweet-length (140 chars) description of the project for "
@@ -43,6 +40,10 @@ class Project(models.Model):
         related_name="projects")
     classlist = models.TextField(blank=True, null=True)
     
+
+    class Meta:
+        app_label = 'projects'
+        
     def __unicode__(self):
         return u'%s' % self.name
         
