@@ -36,6 +36,11 @@ class ProjectEditView(UpdateView):
 class ProjectCreateView(CreateView):
     model = Project
     form_class = ProjectForm
+    
+    def get_context_data(self, **kwargs):
+        context = super(ProjectCreateView, self).get_context_data(**kwargs)
+        context['datepicker_needed'] = True
+        return context
 
     def form_valid(self, form):
         # object needs to exist before we can add manytomany relationships
