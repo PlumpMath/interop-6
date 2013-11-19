@@ -11,14 +11,33 @@ class ProjectForm(autocomplete_light.FixedModelForm):
     def __init__(self, *args, **kwargs):
         super(ProjectForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
+        
+        # override form field labels
         self.fields['add_new_elements'].label = "Add new building blocks"
         self.fields['description'].label = "(Optional) long description"
+        self.fields['api'].label = "Does this project offer an API "\
+            "or other programmatic access (data download, OAI-PMH, etc.)? " \
+            "Check if yes."
+        self.fields['api_doc_link'].label = "Link to documentation for API "\
+            "or other programmatic access, if applicable"
+        self.fields['projects_interoperated_with'].label = "Other Harvard " \
+            "projects this uses, or is used by"
+        self.fields['units'].help_text = "Group(s) with primary responsibility " \
+            "for the project. To specify which Harvard school a group " \
+            "belongs to, edit that group directly."
+        # prevent the projects-interoperated-with select widget from
+        # including the project itself as a choice of projects to link to
+        self.fields['projects_interoperated_with'].queryset = \
+            Project.objects.exclude(id=self.instance.id)
+            
+        # make the form pretty
         self.helper.layout = Layout(
             Fieldset(
                 "Basic project information",
                 Div(
                     Div(
                         'name',
+                        'display_name',
                         'url', 
                         'short_description',
                         css_class='span6'
@@ -31,7 +50,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                 ),
             ),
             Fieldset(
-                "Building blocks",
+                "Building blocks and interoperability hooks",
                 'project_type',
                 Div(
                     Div('elements',
@@ -42,6 +61,9 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                     ),
                     css_class="row-fluid"
                 ),
+                'projects_interoperated_with',
+                'api',
+                'api_doc_link',
             ),
             Fieldset(
                 "People and contact information",
@@ -90,21 +112,20 @@ class ProjectForm(autocomplete_light.FixedModelForm):
         )
         self.helper.add_input(Submit('submit', 'Submit'))
         
+    # the add_new fields aren't model fields; they exist to let us
+    # add items not yet available in the databases
     add_new_elements = forms.CharField(max_length=100, required=False,
-        help_text="If your project uses building blocks that aren't "
-        "already in the database, you can add a comma-separated list "
-        "here.")
+        help_text="Can't find your building blocks in the autocomplete? "
+        "You can add new ones here, as a comma-separated list.")
         
     add_new_groups = forms.CharField(max_length=100, required=False,
-        help_text="If your project belongs to Harvard groups that aren't "
-        "already in the database, you can add a comma-separated list "
-        "here.")
+        help_text="Can't find your groups in the autocomplete? "
+        "You can add new ones here, as a comma-separated list.")
         
     add_new_contributors = forms.CharField(max_length=100, required=False,
-        help_text="If the people contributing to your project aren't "
-        "already in the database, you can add a comma-separated list "
-        "here.")
-        
+        help_text="Can't find your contributors in the autocomplete? "
+        "You can add new ones here, as a comma-separated list.")
+
     class Meta:
         model = Project
         widgets = autocomplete_light.get_widgets_dict(Project)
@@ -112,4 +133,5 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                   'contact_email', 'contact_phone', 'units', 'add_new_groups',
                   'contributors', 'add_new_contributors', 'status', 
                   'start_date', 'end_date', 'elements', 'add_new_elements', 
-                  'project_type')
+                  'project_type', 'api', 'api_doc_link', 'display_name',
+                  'projects_interoperated_with')

@@ -14,9 +14,13 @@ def process_new_items(new_items, app_label, model_name):
     new_items = new_items.split(',')
     return_list = []
     for new_item in new_items:
-        if not new_item.isspace():
+        # only process if nonempty. Oddly, empty unicode strings
+        # seem truthy.
+        if new_item and not new_item==u'':
             # begone, spurious whitespace
             new_item = new_item.lstrip().rstrip()
+            print new_item
+            print new_item.isspace()
             try:
                 # if they've somehow put something that's already in our
                 # db into the new elements field, use the existing element

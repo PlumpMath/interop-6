@@ -29,6 +29,12 @@ class UnitUpdateView(UpdateView):
     model = Unit
     form_class = UnitUpdateForm
 
+    def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS,
+                             'Hooray, %s edited!'
+                             % self.object.name)
+        return reverse_lazy('units:detail_view', args=(self.object.id,))
+
 class ContributorDetailView(DetailView):
     model = Contributor
     template_name = "contributor_detail.html"
@@ -53,7 +59,8 @@ class ContributorUpdateView(UpdateView):
 
     def get_success_url(self):
         messages.add_message(self.request, messages.SUCCESS,
-                             'Hooray, contributor edited!')
+                             'Hooray, %s edited!'
+                             % self.object.name)
         return reverse_lazy('units:contributor_view', args=(self.object.id,))
 
 class SchoolDetailView(DetailView):
@@ -75,4 +82,7 @@ class SchoolUpdateView(UpdateView):
     form_class = SchoolUpdateForm
     
     def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS,
+                             'Hooray, %s edited!'
+                             % self.object.name)
         return reverse_lazy('units:school_view', args=(self.object.id,))

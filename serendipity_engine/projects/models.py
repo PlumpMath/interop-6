@@ -10,6 +10,8 @@ logger = logging.getLogger(__name__)
 
 class Project(models.Model):
     name = models.CharField(max_length=100)
+    display_name = models.CharField(max_length=35,
+        help_text="Maximum of 35 characters")
     short_description = models.CharField(max_length=140,
         help_text="Tweet-length (140 chars) description of the project for "
         "its display tile")
@@ -39,13 +41,16 @@ class Project(models.Model):
     project_type = models.ForeignKey(ProjectType, blank=True, null=True, 
         related_name="projects")
     classlist = models.TextField(blank=True, null=True)
-    
+    api = models.BooleanField(default=False)
+    api_doc_link = models.URLField(blank=True)
+    projects_interoperated_with = models.ManyToManyField("self", blank=True,
+        null=True)
 
     class Meta:
         app_label = 'projects'
         
     def __unicode__(self):
-        return u'%s' % self.name
+        return u'%s' % self.display_name
         
     def save(self, *args, **kwargs):
         """

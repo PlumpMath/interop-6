@@ -3,7 +3,8 @@
 {% block content %}
   <div class="row-fluid">
     <div class="span12 red_bar well">
-      <h3>{{ object.name }}</h3>
+      <h3>{{ object.display_name }}</h3>
+      <p>Project full name: {{ object.name }}</p>
       <p class="lead">{{ object.short_description }}</p>
       {% if object.description %}
           <blockquote>{{ object.description }}</blockquote>
@@ -23,14 +24,17 @@
           {% endif %}
         </div>
         <div class="span6">
-          <p><strong>Start:</strong>
-            {% if object.start_date %}{{ object.start_date }}
-            {% else %}(unknown)
-            {% endif %} &mdash;
-            <strong>End:</strong> 
-            {% if object.end_date %}{{ object.end_date }}
-            {% else %}(unknown)
-            {% endif %}</p>
+          {% if object.start_date or object.end_date %}
+            <p>
+              {% if object.start_date %}
+                <strong>Start:</strong> {{ object.start_date }}
+              {% endif %}
+               &mdash;
+              {% if object.end_date %}
+                <strong>End:</strong> {{ object.end_date }}
+              {% endif %}
+            </p>
+          {% endif %}
           <p>
             <strong>Status:</strong>
             {% if object.status %}{{ object.status }}
@@ -44,23 +48,37 @@
   <div class="row-fluid">
     <div class="span6 red_bar well">
       <h3>People</h3>
-      <h4>Groups</h4>
-      {% for unit in object.units.all %}
-          <a href="{% url 'units:detail_view' unit.id%}">
-            {{ unit }}</a><br />
-      {% endfor %}
-      <h4>Contributors</h4>
-      {% for contributor in object.contributors.all %}
-          <a href="{% url 'units:contributor_view' contributor.id %}">
-            {{ contributor }}</a><br />
-      {% endfor %}
+      {% if object.units.all %}
+          <h4>Groups</h4>
+          {% for unit in object.units.all %}
+              <a href="{% url 'units:detail_view' unit.id%}">
+                {{ unit }}</a><br />
+          {% endfor %}
+      {% endif %}
+      {% if object.contributors.all %}
+          <h4>Contributors</h4>
+          {% for contributor in object.contributors.all %}
+              <a href="{% url 'units:contributor_view' contributor.id %}">
+                {{ contributor }}</a><br />
+          {% endfor %}
+      {% endif %}
     </div>
     <div class="span6 red_bar well">
       <h3>Elements</h3>
-      {% for element in object.elements.all %}
-          <a href="{% url 'elements:detail_view' element.id %}">
-            {{ element }}</a><br />
-      {% endfor %}
+      {% if object.projects_interoperated_with.all %}
+          <h4>Projects interoperated with</h4>
+          {% for project in object.projects_interoperated_with.all %}
+              <a href="{% url 'projects:detail_view' project.id %}">
+                {{ project }}</a><br />
+          {% endfor %}
+      {% endif %}
+      {% if object.elements.all %}
+          <h4>Building blocks</h4>
+          {% for element in object.elements.all %}
+              <a href="{% url 'elements:detail_view' element.id %}">
+                {{ element }}</a><br />
+          {% endfor %}
+      {% endif %}
     </div>
   </div>
     

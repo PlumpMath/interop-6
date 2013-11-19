@@ -1,5 +1,5 @@
 <div class="tile span4 well well-small {{ project.classlist }} red_bar_small clearfix">
-    <h3>{{ project.name }}</h3>
+    <h3>{{ project.display_name }}</h3>
     <div>
         <h4>{{ project.unit }}</h4>
         <p>{{ project.short_description }}</p>
@@ -12,6 +12,13 @@
         None known. <a href="{% url 'projects:edit_view' project.id %}">
         Add some?</a>
     {% endfor %}
+    {% if project.projects_interoperated_with.all %}
+        <h4 class="bar"><i class="icon-link"></i> Interoperates with...</h4>
+        {% for project in project.projects_interoperated_with.all %}
+            <a href="{% url 'projects:detail_view' project.id %}">
+            {{ project }}</a>{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
     <h4 class="bar last">
         <a href="{% url 'projects:detail_view' project.id %}">Details</a>
     </h4>

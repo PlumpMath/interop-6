@@ -18,10 +18,11 @@ admin.site.register(ProjectType, ProjectTypeAdmin)
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('name', 'url', 'project_type')
-    fields = ('name', 'description', 'contact_email', 'contact_phone',
-              'units', 'url', 'contributors', 'status', 'start_date', 
-              'end_date', 'elements', 'project_type')
+    list_display = ('display_name', 'name', 'url', 'project_type')
+    fields = ('display_name', 'name', 'description', 'contact_email',
+              'contact_phone', 'units', 'url', 'contributors', 'status', 
+              'start_date', 'end_date', 'elements', 'project_type',
+              'projects_interoperated_with')
 
 admin.site.register(Project, ProjectAdmin)
 

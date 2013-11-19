@@ -75,6 +75,8 @@ def activate_user(sender, **kwargs):
                       reverse('login') + ' with the username '
                       + instance.username + ' and the password you set when '
                       'you created your account.\n\n'
+                      'Create a new project at http://' + domain + 
+                      reverse('projects:create_view') + '.\n\n'
                       'Forgot your password? You can reset it at http://' +
                       domain +
                       reverse('django.contrib.auth.views.password_reset')

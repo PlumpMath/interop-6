@@ -5,7 +5,8 @@ from .models import Unit, School
 class UnitUpdateForm(forms.ModelForm):
     # Makes it possible to associate units with schools through front end.
     school = forms.ModelChoiceField(queryset=School.objects.all().order_by('name'),
-                                    empty_label="(No school)")
+                                    empty_label="(No school)", 
+                                    required=False)
 
     class Meta:
         model = Unit

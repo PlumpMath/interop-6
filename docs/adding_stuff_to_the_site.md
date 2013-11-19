@@ -1,5 +1,15 @@
 # Altering the site
 
+## To approve users...
+* Log in to the admin site at /admin .
+* Click on Users
+* Click on the user you would like to approve
+* Click on the Active checkbox
+* Save the user
+
+Newly activated users will automatically get an email telling them how
+to add a project and reminding them of their username.
+
 ## To change the sidebar...
 * it lives in serendipity_engine/templates/sidebar.html
 * linking to external sites is standard HTML: just add <li>

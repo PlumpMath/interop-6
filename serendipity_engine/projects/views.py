@@ -50,6 +50,12 @@ class ProjectCreateView(CreateView):
         context['datepicker_needed'] = True
         return context
 
+    def form_invalid(self, form):
+        messages.add_message(self.request, messages.ERROR,
+            "Whoops, that project couldn't be created as specified. Please fix "
+            "the errors below.")
+        return super(ProjectCreateView, self).form_invalid(form)
+        
     def form_valid(self, form):
         # object needs to exist before we can add manytomany relationships
         super(ProjectCreateView, self).form_valid(form)
@@ -66,7 +72,8 @@ class ProjectCreateView(CreateView):
             make sure we only add the success message once.
             """
             messages.add_message(self.request, messages.SUCCESS,
-                                 'Hooray, project edited!')
+                                 'Hooray, %s created!'
+                                 % self.object.name)
         return reverse_lazy('projects:detail_view', args=(self.object.id,))
 
 class ProjectRandomView(DetailView):
