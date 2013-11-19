@@ -1,5 +1,5 @@
 {% for project in projects %}
-  <div class="well red_bar span6">
+  <div class="well red_bar span6 tile">
     <h3>{{ project }}</h3>
     <p class="lead">{{ project.short_description }}</p>
     <p><a href="{% url 'projects:detail_view' project.id %}">

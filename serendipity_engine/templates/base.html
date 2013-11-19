@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ STATIC_URL }}css/bootstrap_custom/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
         <!--[if IE 7]>
           <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
         <![endif]-->
@@ -31,27 +31,29 @@
             header {
                 height: 200px;
                 margin-bottom: 20px;
-                background-color: #A51C30;
+                background: #F3F3F1;
                 border-bottom-style: solid;
                 border-bottom-width: 1px;
                 border-bottom-color: #BAC5C6;
+                border-left: 10px solid #A51C30;
             }
             
             h1, h2 {
-                font-family: "Georgia", "Times New Roman", serif;
+                font-family: "Sorts Mill Goudy", "Georgia", "Times New Roman", serif;
                 letter-spacing: .05em;
                 font-weight:normal;
             }
 
             header h1 {
-                margin-right: -20px;
+                margin-right: -10px;
                 padding-top: 0.5em;
                 padding-bottom: 0.5em;
                 padding-left: 20px;
-                color: #F3F3F1;
+                color: #A51C30;
+                font-weight: bold;
             }
             header h2 {
-                color: #D16103;
+                color: #C4961A;
                 margin-right: -20px;
                 padding-top: 0.25em;
                 padding-bottom: 0.25em;
@@ -99,6 +101,15 @@
             .tile {
                 margin-left: 0 !important;
                 margin-right: 1.418439716312% !important;
+            }
+            
+            .tile.span6 {
+                margin-right: 1.06389971723405% !important;
+            }
+            
+            .tile.break-after:after {
+                content:"\A";
+                white-space:pre;
             }
             
             .tile.filtered {

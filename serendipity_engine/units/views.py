@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponseRedirect
 from django.views.generic import DetailView, UpdateView
@@ -48,6 +49,12 @@ class ContributorDetailView(DetailView):
         
 class ContributorUpdateView(UpdateView):
     model = Contributor
+    template_name = "units/unit_form.html"
+
+    def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS,
+                             'Hooray, contributor edited!')
+        return reverse_lazy('units:contributor_view', args=(self.object.id,))
 
 class SchoolDetailView(DetailView):
     model = School

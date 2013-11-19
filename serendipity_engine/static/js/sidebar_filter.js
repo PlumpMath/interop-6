@@ -3,10 +3,9 @@ var $j = jQuery.noConflict();
 $j(document).ready(function() {
     var showList = [];
     var harvest_identifier = function(element) {
-        // we have to do id_facet and class_facet as id/class
-        // names on elements rather than just id="facet",
-        // class="facet" because facet names are not guaranteed
-        // to be valid CSS selectors
+        // we have to use id="id_facet" and class="class_facet" as id/class
+        // names on elements rather than just id="facet", class="facet" 
+        //because facet names are not guaranteed to be valid CSS selectors
         id = element.attr("id")
         id = id.slice(3);
         return id
@@ -15,8 +14,7 @@ $j(document).ready(function() {
     // this shows or hides tiles based on the facets listed in the sidebar
     // of the home page, which are ORed together.
     var toggle_all_the_things = function(identifier) {
-        // native JS indexOf doesn't work with IE. Use 
-        // jQuery instead.
+        // native JS indexOf doesn't work with IE. Use jQuery instead.
         if($j.inArray(identifier, showList) >= 0) {
             // if this facet was in our list of things to show,
             // remove it.
@@ -72,9 +70,26 @@ $j(document).ready(function() {
         }
     }
     
+    var rectify_spacing = function() {
+        var visible_tiles = $j('.tile:visible');
+        $j('.clearfix.fakery').remove();
+        visible_tiles.each(function(index) {
+            if(index % 3 == 2) {
+                // force linebreak after every third visible tile, so that
+                // the next tile is left-justified
+                $j(this).after('<div class="clearfix fakery"></div>');
+            }
+        });
+    }
+    
     $j('.facetlist li').click(function() {
         $j(this).toggleClass('active');
         identifier = harvest_identifier($j(this));
         toggle_all_the_things(identifier);
+        rectify_spacing();
     });
+    
+    // make spacing look right onload; will call again after each time
+    // we change the set of visible tiles
+    rectify_spacing();
 });

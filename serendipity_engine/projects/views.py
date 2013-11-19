@@ -25,12 +25,20 @@ class ProjectEditView(UpdateView):
     form_class = ProjectForm
 
     def form_valid(self, form):
+        super(ProjectEditView, self).form_valid(form)
         process_new_item_fields(form, self.object)
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        messages.add_message(self.request, messages.SUCCESS,
-                             'Hooray, project edited!')
+        stored_messages = messages.get_messages(self.request)
+        if not stored_messages:
+            """
+            get_success_url gets called twice by form_valid (once
+            by the super call, once by the ending redirect). Want to 
+            make sure we only add the success message once.
+            """
+            messages.add_message(self.request, messages.SUCCESS,
+                                 'Hooray, project edited!')
         return reverse_lazy('projects:detail_view', args=(self.object.id,))
 
 class ProjectCreateView(CreateView):
@@ -44,13 +52,21 @@ class ProjectCreateView(CreateView):
 
     def form_valid(self, form):
         # object needs to exist before we can add manytomany relationships
+        super(ProjectCreateView, self).form_valid(form)
         self.object = form.save()
         process_new_item_fields(form, self.object)
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
-        messages.add_message(self.request, messages.SUCCESS,
-                             'Hooray, project created!')
+        stored_messages = messages.get_messages(self.request)
+        if not stored_messages:
+            """
+            get_success_url gets called twice by form_valid (once
+            by the super call, once by the ending redirect). Want to 
+            make sure we only add the success message once.
+            """
+            messages.add_message(self.request, messages.SUCCESS,
+                                 'Hooray, project edited!')
         return reverse_lazy('projects:detail_view', args=(self.object.id,))
 
 class ProjectRandomView(DetailView):
