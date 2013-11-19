@@ -1,8 +1,30 @@
 {% extends "base.html" %}
 
-{% block layout %}
-    <div class="span12">
-        {% block content %}
-        {% endblock %}
+{% block top_nav %}
+  {% url 'projects:create_view' as add_new %}
+  <div class="navbar">
+    <div class="navbar-inner">
+      <ul class="nav nav-tabs">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="https://wiki.harvard.edu/confluence/display/HLSLibraryInteroperability/Home">Wiki</a></li>
+        {% if user.is_authenticated %}
+        <li{% ifequal request.path add_new %} class="active"{% endifequal %}>
+          <a href="{% url 'projects:create_view' %}">Add new project</a>
+        </li>
+        <li><a href="{% url 'logout' %}">Log out</a></li>
+        {% else %}
+        <li><a href="{% url 'registration_register' %}">Get an account</a></li>
+        <li><a href="{% url 'login' %}">Log in</a></li>
+        {% endif %}
+      </ul>
     </div>
+  </div>
+{% endblock %}
+
+{% block layout %}
+  <div class="span12">
+    {% block content %}
+    {% endblock %}
+  </div>
 {% endblock %}

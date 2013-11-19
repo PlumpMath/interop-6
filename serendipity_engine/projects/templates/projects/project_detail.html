@@ -7,11 +7,16 @@
       <p>Project full name: {{ object.name }}</p>
       <p class="lead">{{ object.short_description }}</p>
       {% if object.description %}
-          <blockquote>{{ object.description }}</blockquote>
+          <blockquote>{{ object.description | linebreaksbr }}</blockquote>
       {% endif %}
       <div class="row-fluid">
         <div class="span6">
-          <p><strong>URL:</strong> <a href="{{ object.url }}">{{ object.url }}</a></p>
+          {% if object.url %}
+            <p>
+              <strong>URL:</strong> 
+              <a href="{{ object.url }}">{{ object.url }}</a>
+            </p>
+          {% endif %}
           {% if object.contact_email %}
             <p>
               <strong>Email:</strong> {{ object.contact_email }}
@@ -35,12 +40,12 @@
               {% endif %}
             </p>
           {% endif %}
-          <p>
-            <strong>Status:</strong>
-            {% if object.status %}{{ object.status }}
-            {% else %}(unknown)
-            {% endif %}
-          </p>
+          {% if object.status %}
+              <p>
+                <strong>Status:</strong>
+                {{ object.status }}
+              </p>
+          {% endif %}
         </div>
       </div>
     </div>

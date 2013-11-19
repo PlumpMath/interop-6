@@ -12,233 +12,18 @@
         <!--[if IE 7]>
           <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
         <![endif]-->
-        <style type="text/css">
-            <!-- see http://www.gse.harvard.edu/guide/palette/ -->
-            body {
-                font-family: "PT Sans", "Helvetica Neue", sans-serif;
-                position: relative;
-                font-size: 14px;
-            }
-            
-            a:link, a:active, a:visited {
-                color: #4E84C4;
-            }
-
-            a:hover {
-                color: #293352;
-            }
-            
-            header {
-                height: 200px;
-                margin-bottom: 20px;
-                background: #F3F3F1;
-                border-bottom-style: solid;
-                border-bottom-width: 1px;
-                border-bottom-color: #BAC5C6;
-                border-left: 10px solid #A51C30;
-            }
-            
-            h1, h2 {
-                font-family: "Sorts Mill Goudy", "Georgia", "Times New Roman", serif;
-                letter-spacing: .05em;
-                font-weight:normal;
-            }
-
-            header h1 {
-                margin-right: -10px;
-                padding-top: 0.5em;
-                padding-bottom: 0.5em;
-                padding-left: 20px;
-                color: #A51C30;
-                font-weight: bold;
-            }
-            header h2 {
-                color: #C4961A;
-                margin-right: -20px;
-                padding-top: 0.25em;
-                padding-bottom: 0.25em;
-                padding-left: 20px;
-                font-style: italic;
-            }
-            
-            h4.bar {
-                font-size: 14px;
-                text-align: center;
-                border-style: solid;
-                border-width: 1px 0;
-                border-color: rgb(221,221,221);
-                margin: 9px -9px;
-                padding: 7px;
-            }
-            
-            h4.bar.last {
-                border-bottom: none;
-                padding-bottom: 0;
-                margin-bottom: 0;
-            }
-             
-            .miscellaneous {
-                margin-bottom: 20px;
-            }
-            
-            .footer {
-                margin-top: 40px;
-                padding: 20px 0;
-                background: #F3F3F1;
-                border-top-style: solid;
-                border-top-width: 1px;
-                border-top-color: #BAC5C6;
-            }
-            
-            .footer p {
-                margin: 0;
-            }
-
-            .well {
-                background-color: white;
-            }
-            
-            .tile {
-                margin-left: 0 !important;
-                margin-right: 1.418439716312% !important;
-            }
-            
-            .tile.span6 {
-                margin-right: 1.06389971723405% !important;
-            }
-            
-            .tile.break-after:after {
-                content:"\A";
-                white-space:pre;
-            }
-            
-            .tile.filtered {
-                display: none;
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-            
-            .red_bar, .red_bar_small {
-                border-top: solid 10px #A51C30;
-            }
-
-            .red_bar h3 {
-                background-color: #F3F3F1;
-                margin-top: -19px;
-                margin-right: -19px;
-                margin-left: -19px;
-                padding-left: 19px;
-                padding-top:10px;
-                padding-bottom:10px;
-            }
-            
-            .red_bar_small h3 {
-                background-color: #F3F3F1;
-                margin-top: -9px;
-                margin-right: -9px;
-                margin-left: -9px;
-                padding-left: 9px;
-                padding-top:5px;
-                padding-bottom:5px;
-            }
-            
-            .random {
-                text-align: center;
-            }
-            
-            .random a.btn {
-                color: rgb(165, 28, 48);
-            }
-            
-            ul.nav > li.active a {
-                font-weight: bold;
-            }
-            
-            ul.nav.filterable .facetlist li.active a {
-                background: #eee;
-            }
-            
-            .nav li.nav-header {
-                margin: 0;
-                border-color: rgb(221, 221, 221);
-                border-style: solid;
-                border-width: 0 1px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                cursor: pointer;
-            }
-            
-            .nav li.nav-header i {
-                float: left;
-                margin-top: 5px;
-                margin-right: 5px;
-            }
-            
-            .nav li.nav-header .icon-chevron-down {
-                display: none;
-                float: left;
-            }
-            
-            .nav li.nav-header .icon-chevron-up {
-                display: inherit;
-            }
-
-            .nav li.nav-header.collapsed .icon-chevron-down {
-                display: inherit;
-            }
-            
-            .nav li.nav-header.collapsed .icon-chevron-up {
-                display: none;
-            }
-
-            .nav-tabs.nav-stacked .nav-tabs.nav-stacked {
-                margin-bottom: 0;
-                width: 100%;
-            }
-            
-            .nav-tabs.nav-stacked .nav-tabs.nav-stacked a {
-                border-radius: 0;
-            }
-            
-            .alert-block.alert-error,.alert-info.error {
-                color:white;
-                background-color: #A51C30;
-                text-shadow: none;
-                border-color: #A51C30;
-            }
-            
-            .alert-info.success {
-                background-color: #DDF1BE;
-                border-color: #52854C;
-                color:#52854C;
-                text-shadow: none;
-            }
-            
-            .help-block {
-                border-left: solid 3px rgb(204,204,204);
-                padding-left: 5px;
-                margin-bottom: 10px;
-                margin-top: -5px;
-            }
-            
-            form label {
-                font-size: 115%;
-                margin-top: 1.5em;
-            }
-            
-            form legend {
-                margin-bottom: 0;
-            }
-        </style>
+        <link href="{{ STATIC_URL }}css/custom.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <div class="header">
             <div class="container-fluid">
                 <h1>Harvard Interop Serendipity Engine</h1>
                 <h2>how do you connect?</h2>
             </div>
-        </header>
+        </div>
         <div class="container-fluid">
+            {% block top_nav %}
+            {% endblock %}
             {% if messages %}
                 {% for message in messages %}
                 <div class="alert alert-info 
@@ -252,21 +37,18 @@
                 {% endblock %}
             </div>
         </div>
-        <footer class="footer">
+        <div class="footer">
             <div class="container-fluid">
                 <p>designed and built by <a href="http://andromedayelton.com">
                 andromeda yelton</a> of <a href="http://smallbeautifuluseful.com">
                 smallbeautifuluseful, llc</a>. 2013.
                 </p>
                 
-                {% comment %}
-                no easter egg for now
                 <p class="pull-right">
                 want something <a href="{% url 'miscellaneous' %}">miscellaneous</a>?
                 </p>
-                {% endcomment %}
             </div>
-        </footer>
+        </div>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         {% if not show_sidebar_url %}
@@ -288,12 +70,3 @@
         {% endblock %}
     </body>
 </html>
-
-{% comment %}
-audit js: are we using it? are we better off having a small local version?
-add code and documentation licenses to footer
-make sure smallbeautifuluseful.com points at something!
-what's with the slow response time on the facet lists?
-move custom css to external stylesheet
-put breakpoints on header background so it works right on small screens
-{% endcomment %}

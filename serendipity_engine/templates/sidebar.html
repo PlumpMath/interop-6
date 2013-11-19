@@ -1,7 +1,7 @@
 {% url 'home' as home %}
 {% url 'about' as about %}
 
-<ul class="nav nav-tabs nav-stacked {% if not show_sidebar_url %}filterable{% endif %}">
+<ul class="sidebar nav nav-tabs nav-stacked {% if not show_sidebar_url %}filterable{% endif %}">
     <li {% if request.path == home %} class="active"{% endif %}>
         <a href="{% url 'home' %}">Home</a></li>
     <li {% if request.path == about %} class="active"{% endif %}>
