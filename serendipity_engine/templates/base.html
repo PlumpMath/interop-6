@@ -51,6 +51,8 @@
         </div>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        {% block extra_js %}
+        {% endblock %}
         {% if not show_sidebar_url %}
         <script src="{% static 'js/sidebar_filter.js' %}"></script>
         {% else %}
@@ -66,7 +68,5 @@
             });
           </script>
         {% endif %}
-        {% block extra_js %}
-        {% endblock %}
     </body>
 </html>
