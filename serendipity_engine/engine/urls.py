@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     url(r'^about/$',
         TemplateView.as_view(template_name='about.html'),
         name='about'),
+    url(r'^privacy/$', 
+    	TemplateView.as_view(template_name='privacy.html'), 
+    	name='privacy'),
 
     # app namespaces
     url(r'^projects/',

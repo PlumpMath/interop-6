@@ -50,7 +50,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                 ),
             ),
             Fieldset(
-                "Building blocks and interoperability hooks",
+                "Building blocks and interoperability hooks [NOTE: Add new elements in boxes to the right. Left boxes only accept autofill.",
                 'project_type',
                 Div(
                     Div('elements',
@@ -115,8 +115,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
     # the add_new fields aren't model fields; they exist to let us
     # add items not yet available in the databases
     add_new_elements = forms.CharField(max_length=100, required=False,
-        help_text="Can't find your building blocks in the autocomplete? "
-        "You can add new ones here, as a comma-separated list.")
+        help_text="NOTE: New elements MUST be entered in this box. Separate entries with a comma")
         
     add_new_groups = forms.CharField(max_length=100, required=False,
         help_text="Can't find your groups in the autocomplete? "

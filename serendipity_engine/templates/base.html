@@ -3,22 +3,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<!-- Look in COLLECTEDSTATIC for the CSS
+    About page is in engine/templates 
+    documentation:  https://github.com/harvard-lil/interop 
+    -->
     <head>
-        <title>Harvard Interop Serendipity Engine</title>
+    	<meta http-equiv="Pragma" content="no-cache">
+        <title>Harvard Interoperability Initiative</title>
+        <link rel="icon" href="{{ STATIC_URL }}img/favicon.png" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ STATIC_URL }}css/bootstrap_custom/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/custom.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
         <!--[if IE 7]>
           <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
         <![endif]-->
-        <link href="{{ STATIC_URL }}css/custom.css" rel="stylesheet">
+        
     </head>
     <body>
         <div class="header">
             <div class="container-fluid">
-                <h1>Harvard Interop Serendipity Engine</h1>
-                <h2>how do you connect?</h2>
+                <h1>Harvard <span id="interoptitle">Interop</span>erability Initiative</h1>
+                
             </div>
         </div>
         <div class="container-fluid">
@@ -42,10 +49,13 @@
                 <p>designed and built by <a href="http://andromedayelton.com">
                 andromeda yelton</a> of <a href="http://smallbeautifuluseful.com">
                 smallbeautifuluseful, llc</a>. 2013.
-                </p>
+               
                 
-                <p class="pull-right">
-                want something <a href="{% url 'miscellaneous' %}">miscellaneous</a>?
+                <span class="pull-right">
+                <a href="{% url 'miscellaneous' %}">Miscellaneize me</a>!
+                <a href="/privacy/">Privacy policy</a>
+                </span>
+                
                 </p>
             </div>
         </div>

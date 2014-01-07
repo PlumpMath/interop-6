@@ -1,0 +1,72 @@
+{% load staticfiles %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Harvard Interop Serendipity Engine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ STATIC_URL }}css/bootstrap_custom/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+        <!--[if IE 7]>
+          <link rel="stylesheet" href="{% static 'css/font-awesome-ie7.min.css' %}">
+        <![endif]-->
+        <link href="{{ STATIC_URL }}css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container-fluid">
+                <h1>Harvard Interop Serendipity Engine</h1>
+                <h2>how do you connect?</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            {% block top_nav %}
+            {% endblock %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-info 
+                {% if message.tags %}{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
+            <div class="row-fluid">
+                {% block layout %}
+                {% endblock %}
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <p>designed and built by <a href="http://andromedayelton.com">
+                andromeda yelton</a> of <a href="http://smallbeautifuluseful.com">
+                smallbeautifuluseful, llc</a>. 2013.
+                </p>
+                
+                <p class="pull-right">
+                want something <a href="{% url 'miscellaneous' %}">miscellaneous</a>?
+                </p>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        {% if not show_sidebar_url %}
+        <script src="{% static 'js/sidebar_filter.js' %}"></script>
+        {% else %}
+        {# incompatible with sidebar_filter, and not simultaneously needed #}
+        {% include 'autocomplete_light/static.html' %}
+        {% endif %}
+        {% if datepicker_needed %}
+          <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+          <script>
+            $(function() {
+              $( ".datepicker" ).datepicker();
+            });
+          </script>
+        {% endif %}
+        {% block extra_js %}
+        {% endblock %}
+    </body>
+</html>
