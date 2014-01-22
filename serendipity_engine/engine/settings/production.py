@@ -4,7 +4,7 @@ from .base import *
 # these are the people who get emailed in case of critical errors;
 # configurable via LOGGING below
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Ingrid Cheung', 'hi@ingridcheung.com'),
 )
 MANAGERS = ADMINS
 
@@ -12,10 +12,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'NAME': 'interop_dev',
+        'USER': 'lil_root',
+        'PASSWORD': 'mas.2Rblcac',
+        'HOST': 'hlslibdata.law.harvard.edu',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
 }
@@ -26,11 +26,11 @@ ALLOWED_HOSTS = ['*']
 
 # fill these in
 # see https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
-EMAIL_USE_TLS = 
-EMAIL_HOST = ''
-EMAIL_HOST_USER = ''
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('DJANGO_EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
-EMAIL_PORT = 
+EMAIL_PORT = 587
 
 # make these not fake
 # yes, from_email is a string and interop_admins is a list of one or more 
@@ -59,7 +59,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': join(PROJECT_ROOT, 'logs', 'serendipity.log'),
+            'filename': os.path.join(PROJECT_ROOT, 'logs', 'serendipity.log'),
             'maxBytes': 1024*1024*5, # 5 MB
             'backupCount': 5,
             'formatter': 'brief',

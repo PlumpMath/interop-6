@@ -49,7 +49,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                 ),
             ),
             Fieldset(
-                "Building blocks and interoperability hooks",
+                "Building blocks and interoperability hooks [NOTE: Add new elements in boxes to the right. Left boxes only accept autofill.",
                 'project_type',
                 Div(
                     Div('elements',

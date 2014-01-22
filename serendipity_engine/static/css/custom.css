@@ -27,21 +27,21 @@ a:hover {
   Header
 */
 .header {
-    height: 200px;
+    height: 100px;
     margin-bottom: 20px;
-    background: #F3F3F1;
+    background: #A51C30;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #BAC5C6;
-    border-left: 10px solid #A51C30;
+    border-left: 1px solid #A51C30;
 }
 
-.header h1 {
+.header h1, interoptitle {
     margin-right: -10px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 20px;
-    color: #A51C30;
+    color: #F3F3F1;
     font-weight: bold;
 }
 .header h2 {
@@ -51,6 +51,9 @@ a:hover {
     padding-bottom: 0.25em;
     padding-left: 20px;
     font-style: italic;
+}
+#interoptitle{
+	color: #F1FFB8;
 }
 
 /*
@@ -128,6 +131,10 @@ ul.sidebar.nav.filterable .facetlist li.active a {
 .tile {
     margin-left: 0 !important;
     margin-right: 1.418439716312% !important;
+    -moz-border-radius: 10px;
+	border-radius: 10px;
+    border: 2px solid #BE6441;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .tile.span6 {

@@ -12,3 +12,7 @@
         {% crispy form %}
     </form>
 {% endblock %}
+
+{% block extra_js %}
+<script src="{{ STATIC_URL }}js/populate_display_name.js"></script>
+{% endblock %}

@@ -1,0 +1,1982 @@
+2013-12-02 13:01:31,863 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-02 13:01:35,698 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-02 13:03:14,254 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-02 13:04:54,467 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-02 13:05:00,369 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-02 13:05:12,948 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 318, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 346, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/core/urlresolvers.py", line 341, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.6/site-packages/Django-1.6-py2.6.egg/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/var/www/html/interop/serendipity_engine/engine/urls.py", line 4, in <module>
+    import autocomplete_light
+ImportError: No module named autocomplete_light
+2013-12-12 15:16:42,846 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:17:58,347 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:19:13,272 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:19:19,629 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:19:36,403 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:20:34,697 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:20:38,300 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:23:55,524 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:24:03,479 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-12 15:42:06,314 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 11:58:17,283 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 12:44:18,915 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 12:44:22,662 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 13:02:10,801 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 13:02:15,173 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 13:02:16,886 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 13:27:10,416 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-16 13:29:31,371 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 156, in render
+    return self.render_template(self.template, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 148, in render
+    len_values = len(values)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 90, in __len__
+    self._result_cache = list(self.iterator())
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 301, in iterator
+    for row in compiler.results_iter():
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 775, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 130, in execute
+    six.reraise(utils.DatabaseError, utils.DatabaseError(*tuple(e.args)), sys.exc_info()[2])
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/backends/mysql/base.py", line 120, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 173, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'interop_dev.project_types_projecttype' doesn't exist")
+2013-12-18 15:51:11,508 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/auth/views.py", line 57, in login
+    current_site = get_current_site(request)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 95, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 26, in get_current
+    current_site = self.get(pk=sid)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: Site matching query does not exist. Lookup parameters were {'pk': 1}
+2013-12-18 15:52:09,788 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/auth/views.py", line 57, in login
+    current_site = get_current_site(request)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 95, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 26, in get_current
+    current_site = self.get(pk=sid)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: Site matching query does not exist. Lookup parameters were {'pk': 1}
+2013-12-19 11:22:03,610 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:23:08,846 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:23:13,306 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:23:15,499 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:23:44,139 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'privacy' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:25:22,137 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'privacy' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:37:44,862 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:38:13,772 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'yourpagename' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:38:33,197 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'privacy' with arguments '()' and keyword arguments '{}' not found.
+2013-12-19 11:39:17,184 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 328, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: '^privacy/$'
+2013-12-19 11:39:34,680 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 272, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 328, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'privacy/'
+2013-12-19 14:55:06,209 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/auth/views.py", line 57, in login
+    current_site = get_current_site(request)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 95, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/contrib/sites/models.py", line 26, in get_current
+    current_site = self.get(pk=sid)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: Site matching query does not exist. Lookup parameters were {'pk': 1}
+2013-12-21 16:15:39,732 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'privacy' with arguments '()' and keyword arguments '{}' not found.
+2013-12-21 16:16:23,471 ERROR django.request[handle_uncaught_exception]: Internal Server Error: /
+Traceback (most recent call last):
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = response.render()
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/loader_tags.py", line 124, in render
+    return compiled_parent._render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/var/www/html/interop/interop/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'privacy' with arguments '()' and keyword arguments '{}' not found.
