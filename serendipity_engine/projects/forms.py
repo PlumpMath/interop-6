@@ -11,9 +11,8 @@ class ProjectForm(autocomplete_light.FixedModelForm):
     def __init__(self, *args, **kwargs):
         super(ProjectForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
-        
+
         # override form field labels
-        self.fields['add_new_elements'].label = "Add new building blocks"
         self.fields['description'].label = "(Optional) long description"
         self.fields['api'].label = "Does this project offer an API "\
             "or other programmatic access (data download, OAI-PMH, etc.)? " \
@@ -29,7 +28,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
         # including the project itself as a choice of projects to link to
         self.fields['projects_interoperated_with'].queryset = \
             Project.objects.exclude(id=self.instance.id)
-            
+
         # make the form pretty
         self.helper.layout = Layout(
             Fieldset(
@@ -38,7 +37,7 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                     Div(
                         'name',
                         'display_name',
-                        'url', 
+                        'url',
                         'short_description',
                         css_class='span6'
                     ),
@@ -56,9 +55,6 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                     Div('elements',
                         css_class='span6'
                     ),
-                    Div('add_new_elements',
-                        css_class='span6'
-                    ),
                     css_class="row-fluid"
                 ),
                 'projects_interoperated_with',
@@ -73,16 +69,10 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                     Div('units',
                         css_class='span6'
                     ),
-                    Div('add_new_groups',
-                        css_class='span6'
-                    ),
                     css_class="row-fluid"
                 ),
                 Div(
                     Div('contributors',
-                        css_class='span6'
-                    ),
-                    Div('add_new_contributors',
                         css_class='span6'
                     ),
                     css_class="row-fluid"
@@ -107,31 +97,17 @@ class ProjectForm(autocomplete_light.FixedModelForm):
                     ),
                     css_class="row-fluid"
                 ),
-                'status', 
+                'status',
             ),
         )
         self.helper.add_input(Submit('submit', 'Submit'))
-        
-    # the add_new fields aren't model fields; they exist to let us
-    # add items not yet available in the databases
-    add_new_elements = forms.CharField(max_length=100, required=False,
-        help_text="Can't find your building blocks in the autocomplete? "
-        "You can add new ones here, as a comma-separated list.")
-        
-    add_new_groups = forms.CharField(max_length=100, required=False,
-        help_text="Can't find your groups in the autocomplete? "
-        "You can add new ones here, as a comma-separated list.")
-        
-    add_new_contributors = forms.CharField(max_length=100, required=False,
-        help_text="Can't find your contributors in the autocomplete? "
-        "You can add new ones here, as a comma-separated list.")
 
     class Meta:
         model = Project
         widgets = autocomplete_light.get_widgets_dict(Project)
-        fields = ('name', 'short_description', 'description', 'url', 
-                  'contact_email', 'contact_phone', 'units', 'add_new_groups',
-                  'contributors', 'add_new_contributors', 'status', 
-                  'start_date', 'end_date', 'elements', 'add_new_elements', 
+        fields = ('name', 'short_description', 'description', 'url',
+                  'contact_email', 'contact_phone', 'units',
+                  'contributors', 'status',
+                  'start_date', 'end_date', 'elements',
                   'project_type', 'api', 'api_doc_link', 'display_name',
                   'projects_interoperated_with')

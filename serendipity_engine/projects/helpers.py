@@ -25,12 +25,13 @@ def process_new_items(new_items, app_label, model_name):
                 # if they've somehow put something that's already in our
                 # db into the new elements field, use the existing element
                 item = my_model.objects.get(name__iexact=new_item)
+                return_list.append({'name':item.name, 'id':item.id})
             except my_model.DoesNotExist:
                 # otherwise, create a new element
                 item = my_model()
                 item.name = new_item
                 item.save()
-            return_list += [item]
+                return_list.append({'name':item.name, 'id':item.id})
     return return_list
 
 def process_new_item_fields(form, my_project):
@@ -39,16 +40,22 @@ def process_new_item_fields(form, my_project):
     from the project creation form. Add them to the project's relationships.
     """
     new_elements = form.cleaned_data['add_new_elements']
-    new_elements = process_new_items(new_elements, 'elements', 'Element')
-    my_project.elements.add(*new_elements)
+    process_new_items(new_elements, 'elements', 'Element')
+    new_elements = new_elements.split(',')
+    if len(new_elements) and new_elements[0]:
+        my_project.elements.add(*new_elements)
 
     new_units = form.cleaned_data['add_new_groups']
-    new_units = process_new_items(new_units, 'units', 'Unit')
-    my_project.units.add(*new_units)
+    process_new_items(new_units, 'units', 'Unit')
+    new_units = new_units.split(',')
+    if len(new_units) and new_units[0]:
+        my_project.units.add(*new_units)
 
     new_contributors = form.cleaned_data['add_new_contributors']
-    new_contributors = process_new_items(new_contributors,
+    process_new_items(new_contributors,
                           'units', 'Contributor')
-    my_project.contributors.add(*new_contributors)
+    new_contributors = new_contributors.split(',')
+    if len(new_contributors) and new_contributors[0]:
+        my_project.contributors.add(*new_contributors)
 
     my_project.save()
